@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bluebird-activity-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bluebird-business-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bluebird-card-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bluebird-charge-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bluebird-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bluebird-house-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bluebird-login-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bluebird-map-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bluebird-payment-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bluebird-room-service/src/main/java" charset="UTF-8" />
   </component>
 </project>
