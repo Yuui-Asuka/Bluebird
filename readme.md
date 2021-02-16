@@ -13,6 +13,6 @@
 * 消息队列rocketMQ
 * 权限控制shiro
 
-# 前端部分采用vue/elementUI,包括小程序端
+* 前端部分采用vue/elementUI,包括小程序端
 
-# 通信方面采用restful+rpc调用，常规接口采用http协议进行交互，对于连接调用频繁的部分采用tcp协议。
+* 通信方面采用restful+rpc调用，常规接口采用http协议进行交互，对于连接调用频繁的部分采用tcp协议。
