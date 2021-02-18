@@ -1,0 +1,43 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+
+      routes:
+        - id: business-service          #路由唯一标识
+          uri: lb://bluebird-business-service    #在nacos下注册的服务名
+          order: 1        #优先级
+          predicates:
+            - Path=/business-server/**       #断言，配置哪个路径才转发
+           # - Before=2020-09-11T01:01:01.000+08:00
+          filters:
+            - StripPrefix=1        #去掉第一层的前缀
+
+        - id: activity-service
+          uri: lb://bluebird-activity-service
+          order: 1
+          predicates:
+              - Path=/activity-server/**
+          filters:
+              - StripPrefix=1
+
+        - id: card-service
+          uri: lb://bluebird-card-service
+          order: 1
+          predicates:
+              - Path=/activity-server/**
+          filters:
+              - StripPrefix=1

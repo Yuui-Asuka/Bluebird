@@ -16,6 +16,7 @@
         <module>bluebird-room-service</module>
         <module>bluebird-map-service</module>
         <module>bluebird-payment-service</module>
+        <module>bluebird-api-gateway</module>
     </modules>
 
     <parent>
@@ -226,5 +227,17 @@
 
     </dependencies>
     </dependencyManagement>
+
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <classifier>execute</classifier>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 
 </project>

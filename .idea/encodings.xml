@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/bluebird-activity-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bluebird-api-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bluebird-business-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bluebird-card-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bluebird-charge-service/src/main/java" charset="UTF-8" />

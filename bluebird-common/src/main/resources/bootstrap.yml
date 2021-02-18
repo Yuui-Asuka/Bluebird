@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: bluebird-common
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848 #配置中心地址
+        file-extension: yaml #文件扩展格式
+
+  profiles:
+    active: dev

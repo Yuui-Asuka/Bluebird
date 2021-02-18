@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: bluebird-business-service
+  zipkin:
+    base-url: http://127.0.0.1:9411/ #zipkin地址
+    discovery-client-enabled: false #不用开启服务发现
+  sleuth:
+    sampler:
+      probability: 1.0 #采样百分比
+  #=======================================================nacos注册中心配置=================================================
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+#=====================================================数据库配置=========================================================
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/business_service?serverTimezone=GMT&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+server:
+  port: 9000
+
+
