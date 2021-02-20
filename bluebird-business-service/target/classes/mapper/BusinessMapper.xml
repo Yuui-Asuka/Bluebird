@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-->
+namespace: 名称空间，全局唯一
+mybatis使用接口动态代理
+<-->
+
+<mapper namespace="com.bluebird.dao.BusinessMapper">
+    <select id="find" resultType="Business">
+        select * from t_business where business_code = #{businessCode}
+    </select>
+</mapper>

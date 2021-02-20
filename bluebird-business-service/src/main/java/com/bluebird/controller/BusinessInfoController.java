@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 
 @RestController
 @RequestMapping("/business-service/api/v1")
@@ -26,8 +28,13 @@ public class BusinessInfoController {
 
 
     @GetMapping("find_by_id")
-    Business findById(@RequestParam(value="business_code") String businessCode){
-        return businessService.findById(businessCode);
+    Business find(@RequestParam(value="business_code") String businessCode){
+        return businessService.find(businessCode);
+    }
+
+    @GetMapping("find_list")
+    List<Business> findList(){
+        return businessService.findList();
     }
 
 }

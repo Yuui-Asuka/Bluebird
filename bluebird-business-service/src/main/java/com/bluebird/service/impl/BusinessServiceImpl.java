@@ -6,6 +6,8 @@ import com.bluebird.domain.Business;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 
 @Service
 public class BusinessServiceImpl implements BusinessService {
@@ -13,7 +15,11 @@ public class BusinessServiceImpl implements BusinessService {
     @Autowired
     BusinessMapper businessMapper;
 
-    public Business findById(String businessCode){
-        return businessMapper.findById(businessCode);
+    public Business find(String businessCode){
+        return businessMapper.find(businessCode);
+    };
+
+    public List<Business> findList(){
+        return businessMapper.findList();
     };
 }
