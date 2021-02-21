@@ -10,6 +10,6 @@ mybatis使用接口动态代理
 
 <mapper namespace="com.bluebird.dao.BusinessMapper">
     <select id="find" resultType="Business">
-        select * from t_business where business_code = #{businessCode, jdbcType=String}
+        select * from t_business where business_code = #{businessCode, jdbcType=VARCHAR}
     </select>
 </mapper>
