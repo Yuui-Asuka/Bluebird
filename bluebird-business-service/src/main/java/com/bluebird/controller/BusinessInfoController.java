@@ -29,7 +29,9 @@ public class BusinessInfoController {
 
     @GetMapping("find_by_id")
     Business find(@RequestParam(value="business_code") String businessCode){
+        String q = "dd";
         return businessService.find(businessCode);
+
     }
 
     @GetMapping("find_list")
