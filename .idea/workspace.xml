@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e722c371-04f8-446b-8dac-79d0ca089406" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlueBird.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-activity-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-activity-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-activity-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-activity-service/target/bluebird-activity-service-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-activity-service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-activity-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-activity-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-activity-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-activity-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-api-gateway/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-api-gateway/src/main/java/com/bluebird/GatewayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-api-gateway/src/main/java/com/bluebird/filter/UserGlobalFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-api-gateway/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-api-gateway/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-api-gateway/target/bluebird-api-gateway-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-api-gateway/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-api-gateway/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-api-gateway/target/classes/com/bluebird/GatewayApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-api-gateway/target/classes/com/bluebird/filter/UserGlobalFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-api-gateway/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-api-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-api-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-api-gateway/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-api-gateway/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/src/main/java/com/bluebird/BusinessApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/src/main/java/com/bluebird/controller/BusinessInfoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/src/main/java/com/bluebird/dao/BusinessMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/src/main/java/com/bluebird/service/BusinessService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/src/main/java/com/bluebird/service/impl/BusinessServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/src/main/resources/mapper/BusinessMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/target/bluebird-business-service-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/target/classes/com/bluebird/BusinessApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/target/classes/com/bluebird/controller/BusinessInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/target/classes/com/bluebird/dao/BusinessMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/target/classes/com/bluebird/service/BusinessService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/target/classes/com/bluebird/service/impl/BusinessServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/target/classes/mapper/BusinessMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-business-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-card-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-card-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-card-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-card-service/target/bluebird-card-service-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-card-service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-card-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-card-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-card-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-card-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-charge-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-charge-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-charge-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-charge-service/target/bluebird-charge-service-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-charge-service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-charge-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-charge-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-charge-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-charge-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/config/MapConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/config/MyBatisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/config/PathConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/config/WeChatConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/domain/Business.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/HttpUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/HttpsUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/ImageUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/JwtUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/MD5Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/OrderIdUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/PathUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/SessionUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/StringUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/XmlUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/signature/AesException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/signature/ByteGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/signature/PKCS7Encoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/signature/SHA1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/signature/WXBizMsgCrypt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/signature/WXBizMsgCryptTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/java/com/bluebird/utils/signature/XMLParse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/target/bluebird-common-1.0-SNAPSHOT-execute.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/target/bluebird-common-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/target/classes/com/bluebird/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/target/classes/com/bluebird/domain/Business.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-house-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-house-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-house-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-house-service/target/bluebird-house-service-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-house-service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-house-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-house-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-house-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-house-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-login-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-login-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-login-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-login-service/target/bluebird-login-service-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-login-service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-login-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-login-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-login-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-login-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-map-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-map-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-map-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-map-service/target/bluebird-map-service-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-map-service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-map-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-map-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-map-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-map-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-payment-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-payment-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-payment-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-payment-service/target/bluebird-payment-service-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-payment-service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-payment-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-payment-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-payment-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-payment-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-room-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-room-service/src/main/java/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-room-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-room-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-room-service/target/bluebird-room-service-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-room-service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-room-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-room-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-room-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluebird-room-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1opqOR1C4NtcLS0591JVTvy7X84" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e722c371-04f8-446b-8dac-79d0ca089406" name="Default Changelist" comment="" />
+      <created>1613993853315</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613993853315</updated>
+      <workItem from="1613993855974" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

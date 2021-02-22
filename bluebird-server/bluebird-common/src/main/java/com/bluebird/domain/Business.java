@@ -2,6 +2,9 @@ package com.bluebird.domain;
 
 import java.io.Serializable;
 
+/**
+ * 商户的POJO类
+ */
 public class Business implements Serializable{
 
         /**
