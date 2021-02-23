@@ -1,0 +1,53 @@
+/* pages/help/help.wxss */
+/* pages/help/help.wxss */
+image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.wechat, .service-phone{
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.phone-img{
+  margin-left: 50rpx;
+}
+
+.question-text{
+  text-align: center;
+  margin-top: 30rpx;
+  font-weight: 600;
+}
+
+.item{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.detail{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+  opacity: 0.7;
+}
+
+.fold-img image{
+  height: 25rpx !important;
+  margin-top: 30rpx;
+}
+
+.wechat-number, .phone-number{
+  margin-left: 40rpx;
+}
+

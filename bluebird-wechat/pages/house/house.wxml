@@ -1,0 +1,181 @@
+<!--pages/house/house.wxml-->
+<view class="title">民宿详情</view> 
+<view class="introduce" style="position: relative; overflow: hidden">
+<scroll-view class="scroll-view_H" scroll-x scroll-with-animation style="width: 100%;height:170px" bindscroll="getSelectItem" scroll-left="{{scrollLeft}}">
+     <block wx:for="{{proList}}"  wx:key="unique" wx:for-index="id" wx:for-item="item">
+        <view class="scroll_item {{item.selected ? 'selected' : ''}}" data-index='{{item.index}}' bindtap='selectProItem'>
+        <view class='proImg' style="position: relative">
+        <image src="{{item.proUrl}}" class="slide-image"  mode="aspectFill"/>
+        <view class="picture_num" style="position:absolute">{{id+1}}/{{proList.length}}</view>
+        </view>
+          <!-- <view class='detailBox'>
+              <view class='proTitle'>{{item.proTitle}}</view>
+              <view class='proDec'>{{item.proDec}}</view>
+              <view class='proPrice'>￥{{item.proPrice}}</view>
+              <navigator class='detailLink'  url="../detail/detail?id={{item.id}}">查看详情 ></navigator>
+         </view> -->
+       </view>
+     </block>
+  </scroll-view>
+
+<view class="details">
+
+
+<view class="info" style="position: relative; overflow: hidden">
+
+<!--标题-->
+<view class="title">
+<image class="title-pic" src="../../images/phone.png"></image>
+<text>{{title}}</text>
+</view>
+
+<!--空房数量-->
+<view class="num" style="position: absolute">
+<view class="blank-num">今日客房数量: {{blankNum}}</view>
+</view>
+
+<!--统一均价-->
+<view class="price" style="position: absolute">
+<view class="price-text">统一均价: ¥{{price}}/晚</view>
+</view>
+
+<!--描述-->
+<view class="describe" style="float: left">
+{{introduce}}
+</view>
+
+<!--标签-->
+<view class="tags">
+<image class="tag-pic" src="../../images/phone.png">
+</image>
+<view class="tag1">{{tag1}}</view>
+<view class="tag2">{{tag2}}</view>
+<view class="tag3">{{tag3}}</view>
+</view>
+
+<!--地址图标-->
+<view class="address" style="float: left">
+<image src="../../images/phone.png"></image>
+<text>{{address}}</text>
+</view>
+
+<!--电话图标-->
+<view class="phone" style="position: absolute">
+<image src="../../images/phone.png">
+</image>
+</view>
+</view>
+
+
+<view class="date" style="position: relative">
+
+<text class="in" style="position: absolute">
+<text id="month1">{{stayMonth}}</text>
+<text id="m1">月</text>
+<text id="day1">{{stayDay}}</text>
+<text id="d1">日</text>
+<text id="stay">入住</text> 
+</text>
+
+<text class="out" style="position: absolute">
+<text id="month2">{{leaveMonth}}</text>
+<text id="m2">月</text>
+<text id="day2">{{leaveDay}}</text>
+<text id="d2">日</text>
+<text id="leave">离开</text>
+</text>
+
+<text class="night" style="position:absolute">{{sub}}晚   ></text>
+
+</view>
+
+
+<view class="boss-introduce" style="position: relative; overflow: hidden">
+
+<view class="boss-introduce-text" style="position: absolute;">民宿老板介绍</view>
+<view class="boss-home" style="position: absolute">民宿老板主页 ></view>
+
+<view class="img-and-name" style="position: absolute">
+<image class="head-img" src="../../images/001.jpg" ></image>
+<text>{{bossName}}</text>
+</view>
+
+<view class="house-describe" style="float: left" >
+<view class="describe-text">
+<text class="house-text {{ellipsis?'ellipsis':'unellipsis'}}">
+{{introduce}}
+</text>
+</view>
+<view class="unfold-button" bindtap="ellipsis">{{unfold? '展开':'收起'}}</view>
+</view>
+</view>
+</view>
+</view>
+
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+ 
+<!--首页-->
+<view class="house" hidden="{{currentTab!==0}}">
+tab_01
+</view>
+ 
+<!--搜索-->
+<view hidden="{{currentTab!==1}}">
+  <view class="activity-list">
+  <block wx:for="{{activityList}}" wx:for-item="item" wx:for-index="index">
+   <view class="activity">
+      <view class="activity-img">
+         <image src="{{item.activityUrl}}"></image>
+      </view>
+   <view class="activity-price">{{item.price}}</view>
+   <view class="activity-name">{{item.name}}</view>
+   <view class="activity-describe">{{item.describe}}</view>
+   </view>
+</block>
+</view>
+</view>
+
+<view hidden="{{currentTab!==2}}">
+  tab_03
+</view>
+
+<view class="page_hd" style="position:fixed; bottom:0;width: 750rpx;">
+  <image class="chat" src="../../images/001.jpg"></image>
+  <image class="like" src="../../images/001.jpg"></image>
+  <image class="share" src="../../images/001.jpg"></image>
+  <view class="choose" bindtap="powerDrawer" data-statu="open" style="float: right">
+选择入住套餐
+</view>
+</view>
+
+
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+
+<view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">
+  <!--drawer content-->
+  <view class="drawer_content">
+    <view class="room-layout">
+      <text class="type-text">房间类型</text>
+      <view class="item {{typeSelected==index? 'active':''}}" bindtap="clickType" wx:for="{{typeList}}" wx:for-item="item" data-idx="{{index}}" wx:key="unique">{{item}}</view>
+    </view>
+    <view class="activity-choose">
+      <text class="activity-choose-text">活动选择</text>
+      <view class="activities">
+      <view class="item {{activitySelected==index? 'active':''}}" bindtap="clickActivity" wx:for="{{activityList}}" wx:for-item="item" data-idx="{{index}}" wx:key="unique">{{item}}</view>
+      </view>
+    </view>
+    <view class="time-choose">
+      <text class="time-choose-text">时间选择</text>
+      <view class="item {{timeSelected==index? 'active':''}}" bindtap="clickTime" wx:for="{{timeList}}" wx:for-item="item" data-idx="{{index}}" wx:key="unique">{{item}}</view>
+    </view>
+    <view class="total-price">
+      <text class="price-number">{{totalPrice}}</text>
+      <text class="price-text">总价</text>
+    </view>
+    <view class="ensure-pay-btn" >
+    确认支付
+    </view>
+  </view>
+</view>

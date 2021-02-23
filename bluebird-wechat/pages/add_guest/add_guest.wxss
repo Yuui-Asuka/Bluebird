@@ -1,0 +1,70 @@
+/* pages/add_guest/add_guest.wxss */
+/* pages/add_guest/add_guest.wxss */
+
+.top {
+  margin-top: 15rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  }
+  
+  .save-text{
+    background: white;
+    border-bottom: solid 1rpx black;
+  }
+  
+  .add-info{
+    margin-top: 30rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    
+  }
+  .add-info .add-text{
+    font-size: 50rpx;
+    font-weight: 600;
+    letter-spacing: 4rpx;
+  }
+  .add-info{
+    margin-top: 20rpx;
+    font-size: 33rpx;
+    margin-bottom: 120rpx;
+  }
+  
+  .country-choose{
+    color: #5E7E7E;
+  }
+  
+  .identification, .telephone{
+    font-size: 30rpx;
+    margin-bottom: 20rpx;
+  }
+  
+  .iden{
+    margin-top: 40rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+  }
+  
+  .name{
+    margin-top: 20rpx;
+  }
+  
+  .zh-name{
+    font-size: 30rpx;
+    margin-bottom: 20rpx;
+    margin-left: 30rpx;
+  }
+  
+  .input-name{
+    margin-left: 30rpx;
+  }
+  
+  .phone{
+    margin-top: 40rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    padding-bottom: 40rpx;
+    border-bottom: solid 2rpx rgb(221, 221, 221);
+  }
+  

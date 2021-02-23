@@ -1,0 +1,54 @@
+<!--pages/search/search.wxml-->
+<!--pages/search/search.wxml-->
+<view class="search" style="display: flex">
+  <view class="search-img" bindtap="search">
+    <image src="../../images/icons/bottom_tab/search_grey.png"></image>
+  </view>
+
+  <view class="search-box">
+    <input placeholder="我想找...主题关键词/民宿/地点/活动"></input>
+  </view>
+</view>
+
+<view class="block">
+ <view class="background">
+  <image class="back" src="../../images/icons/cover7.jpg" style="height:{{height}}rpx; width:{{width}}px" mode="aspectFill"></image>
+  <image class="logo" src="../../images/icons/logo.png"></image>
+ </view>
+
+<view class="search-condition">
+ 
+  <view class="time" bindtap="timeSelect">
+    <view class="time-text">我想在</view>
+    <view class="time-choose">{{dateText}}</view>
+  </view>
+
+  <view class="destination" bindtap="locationSelect">
+    <view class="go-text">我想去</view>
+    <view class="city">{{city}}</view>
+  </view>
+
+  <view class="style" bindtap="styleSelect">
+    <view class="style-text">我喜欢的民宿风格是:</view>
+    <view class="any-style">{{style}}</view>
+  </view>
+
+  <view class="doing" bindtap="thingsSelect">
+    <view class="doing-text">我主要是想:</view>
+    <view class="anything">{{something}}</view>
+  </view>
+
+  <!-- <view class="people-num">
+    <view class="num-text">出行人数:</view>
+    <view class="num">{{peopleNum}}人</view>
+  </view> -->
+</view>
+</view>
+
+
+<view class="search-button" bindtap="search">
+  <button>一键搜索</button>
+</view>
+
+
+

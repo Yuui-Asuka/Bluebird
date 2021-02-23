@@ -1,0 +1,34 @@
+<!--pages/journey/journey.wxml-->
+<!--pages/journey.wxml-->
+<view class="block" wx:if="{{journey==true}}">
+<view class="journey">我的行程</view>
+
+<view class="listview-container">
+  <block wx:for="{{activityList}}" wx:key="">
+    <view class="playlog-item" bindtap="itemTapped">
+      <view class="date">
+        <view class="day">{{item.day}}</view>
+        <view class="dates">{{item.date}}</view>
+      </view>
+      <view class="dotline">
+        <view class="line"></view>
+        <view class="img">
+          <image src="{{item.activityImg}}"></image>
+        </view>
+      </view>
+      <view class="content">
+        <text class="activity-name">{{item.activityName}}</text>
+        <text class="location">{{item.city}} · {{item.houseName}}</text>
+        <text class="date-time">{{item.dateTime}}</text>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class="no-journey" wx:if="{{journeyContent == false}}">
+  <image class="neko" src="../../images/others/neko.png"></image>
+  <view class="no-journey-text">您还没有行程，快去添加吧！</view>
+</view>
+
+
+</view>

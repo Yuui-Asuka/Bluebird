@@ -1,0 +1,194 @@
+/* pages/calendar/calendar.wxss */
+/* pages/calendar/calendar.wxss */
+/* Components/calendar/calendar.wxss */
+
+page {
+  box-sizing: border-box;
+  /* color: #404040;
+  background-color: #edeef2; */
+}
+
+.clear{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cancel{
+  font-size: 50rpx;
+  margin-left: 30rpx;
+}
+
+.clear .clear-text{
+  margin-left: 30rpx;
+  font-size: 33rpx;
+  border-bottom: solid 1px black;
+}
+
+
+.date-box {
+  font-size: 28rpx;
+  color: #404040;
+  background-color: #fff;
+}
+
+
+.date-box-hd{
+  display: flex;
+  padding: 28rpx 24rpx;
+  border-bottom: solid 2rpx rgb(220, 220, 220);
+  font-size: 28rpx;
+  top: 0
+}
+
+.date-box-hd-view{
+  position: fixed;
+  width: 100%;
+  background: white;
+}
+
+
+.date-box-hd .day{
+  flex: 1;
+  text-align: center;
+}
+
+.date-box-con .month:first-child{
+  padding-top: 350rpx !important;
+}
+
+.month-hd {
+  position: relative;
+  padding: 47rpx 0 30rpx;
+  font-size: 28rpx;
+  margin-left: 50rpx;
+}
+
+
+.month-hd .month-text{
+  font-size: 38rpx;
+  opacity: 0.8;
+}
+
+.year-text {
+  position: absolute;
+  top: 14rpx;
+  right: 36rpx;
+  bottom: 0;
+  margin: auto;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: rgb(184, 181, 181);
+}
+
+.days {
+  display: inline-block;
+  width: 100%;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+}
+
+.day-row {
+  width: 100%;
+  padding: 0 24rpx;
+  margin-top: 60rpx;
+  box-sizing: border-box;
+}
+
+.days text {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 14.285%;
+  text-align: center;
+  padding: 30rpx 0;
+}
+
+.disable {
+  color: #cfcfcf;
+}
+
+.days text.active {
+  position: relative;
+  background: #5E7E7E;
+  color: white;
+  border-radius: 50%;
+}
+
+.days text.today {
+  border-radius: 50%;
+  border: solid 1px rgb(131, 131, 131)
+}
+
+.top-info{
+  background: white;
+}
+
+.start-and-end{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  padding-bottom: 10rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.start-date, .end-date{
+  opacity: 0.8;
+}
+
+.start-date .day{
+  font-size: 38rpx;
+  padding-bottom: 15rpx;
+}
+.start-date .date{
+  font-size: 38rpx;
+}
+
+.end-date .day{
+  margin-left: 65rpx;
+  font-size: 38rpx;
+  padding-bottom: 15rpx;
+}
+
+.end-date .date{
+  font-size: 38rpx;
+}
+
+.night{
+  font-size: 30rpx;
+  padding-top: 30rpx;
+}
+
+button{
+  /* bottom: 0; */
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  width: 90%;
+  color: white;
+  background:#5E7E7E;
+}
+
+.next-step{
+  padding-top: 20rpx;
+  background: white;
+  bottom: 0;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  box-shadow:inset 0px 10px 10px -15px #000;
+}
+
+
+
+/* .days text.active::after { */
+  /* content: "预定";
+  display: block;
+  height: 4rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #5b97f0;
+} */

@@ -1,0 +1,354 @@
+/* pages/book_details/book_details.wxss */
+/* pages/book_details/book_details.wxss */
+
+.book-details-top{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  padding-bottom: 50rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.book-details{
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: solid 10rpx rgb(221, 221, 221);
+}
+
+.book-detail-text{
+  font-size: 43rpx;
+  font-weight: 550;
+}
+
+.top{
+  margin-top: 60rpx;
+}
+
+.top .title{
+  font-size: 32rpx;
+  padding-top: 60rpx;
+  opacity: 0.8;
+}
+
+.house-img{
+  float: right;
+}
+
+.house-img image{
+  width: 200rpx;
+  height: 150rpx;
+  border-radius: 5px;
+}
+
+.platform-remind{
+  margin-top: 15rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  padding-bottom: 15rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.remind-text{
+  font-weight: 600;
+  font-size: 30rpx;
+}
+
+.remind-content{
+  font-size: 25rpx;
+  opacity: 0.8;
+}
+
+.book-info{
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  justify-content: space-around;
+  margin-top: 40rpx;
+  padding-bottom: 40rpx;
+  border-bottom: rgb(221, 221, 221) solid 10rpx;
+}
+
+.stay-time{
+  text-align: center;
+}
+
+.type-text, .time-text, .num-text{
+  font-size: 26rpx;
+  margin-bottom: 15rpx;
+}
+
+.type-content, .time-content, .num-content{
+  font-size: 38rpx;
+  color: #5E7E7E;
+}
+
+.stay, .leave, .people-num{
+  text-align: center;
+}
+
+.guest-info{
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  margin-top: 30rpx;
+  padding-bottom: 20rpx;
+  border-bottom: solid 10rpx rgb(221, 221, 221);
+}
+
+.info{
+  width: 600rpx;
+}
+
+.change-text{
+  /* float: right; */
+  color: #5E7E7E;
+}
+
+
+.guest-info-text {
+  justify-content: space-between;
+  margin-bottom: 15rpx;
+  opacity: 0.8;
+}
+.guest-info-content{
+  font-size: 30rpx;
+  opacity: 0.8;
+  margin-bottom: 15rpx;
+}
+
+.guest-info-content .sub-guest{
+  margin-top: 20rpx;
+  height: 40rpx;
+  margin-left: 100rpx;
+  border-bottom: solid 2rpx rgb(114, 114, 114);
+}
+
+.leave-message{
+  margin-top: 30rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-bottom: 50rpx;
+  border-bottom: solid 10rpx rgb(221, 221, 221);
+}
+
+textarea{
+  height: 120rpx;
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.should-know{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.book-should-know, .cancel-policy, .bill{
+  margin-bottom: 15rpx;
+}
+
+.book-should-know text:first-child, .cancel-policy text:first-child, .bill text:first-child {
+  font-size: 28rpx;
+  font-weight: 700;
+}
+
+.book-should-know text:last-child, .cancel-policy text:last-child, .bill text:last-child{
+  font-size: 28rpx;
+  opacity: 0.9;
+}
+
+
+.fee-details{
+  margin-top: 30rpx;
+  padding-bottom: 20rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-bottom: solid 2rpx rgb(180, 180, 180);
+}
+.fee-text{
+  font-size: 25rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+.fee-caculation{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  opacity: 0.9;
+  font-size: 35rpx;
+}
+
+.discount{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  opacity: 0.9;
+  font-size: 35rpx;
+}
+
+.discount .discount-num{
+  color: rgb(15, 199, 15);
+}
+
+.total-fee{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  margin-bottom: 120rpx;
+}
+
+.discount-text #second{
+  color: rgb(15, 199, 15);
+}
+
+
+.next-step button{
+  width: 60%;
+  color: white;
+  background:#5E7E7E;
+  margin-bottom: 30rpx;
+}
+
+.next-step{
+  padding-top: 30rpx;
+  box-shadow:inset 0px 10px 10px -15px #000;
+}
+
+.book-house, .book-activity .item{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-house image{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.book-activity image{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.block{
+  justify-content: left;
+}
+
+.block .name-and-time{
+  margin-left: 20rpx;
+}
+
+.name-and-time{
+  left: 0;
+}
+
+.name-and-time .name{
+  font-size: 35rpx;
+  font-weight: 700;
+}
+
+.name-and-time .time{
+  font-size: 27rpx;
+  opacity: 0.8;
+}
+
+.price-and-night .house-price, .price-and-num .price{
+  color: #5E7E7E;
+  font-size: 35rpx;
+}
+
+.price-and-night .house-night, .price-and-num .num{
+  font-size: 27rpx;
+  opacity: 0.8;
+  right: 0;
+  text-align: right;
+}
+
+.book-house, .book-activity{
+  margin-bottom: 20rpx;
+}
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+ 
+/*content*/
+.drawer_box {
+  width: 500rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 1001;
+  background: #FAFAFA;
+  margin: -200px 125rpx 100px 125rpx;
+  border-radius: 10px;
+}
+ 
+.drawer_title{
+  /* padding:15px; */
+  padding-bottom: 15px;
+  font: 20px "microsoft yahei";
+  text-align: center;
+}
+
+.drawer_content {
+  height: 210px;
+  overflow-y: scroll; /*超出父盒子高度可滚动*/
+}
+
+.drawer-content-pay{
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  margin-top: 15rpx;
+}
+
+.drawer-price{
+  font-size: 70rpx;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.explain{
+  margin-top: 50rpx;
+  justify-content: space-between;
+  font-size: 27rpx;
+  opacity: 0.9;
+  margin-bottom: 20rpx;
+}
+
+.btn_ok{
+  background: white;
+  color: #5E7E7E;
+  width: 100%;
+  border-top: solid 1rpx rgb(240, 240, 240);
+  text-align: center;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+}
+
+.cancel-book{
+  width: 80rpx;
+  height: 60rpx;
+  font-size: 40rpx;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.book-activity .item{
+  margin-bottom: 20rpx;
+}
+

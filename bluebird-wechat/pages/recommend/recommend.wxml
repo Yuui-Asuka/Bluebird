@@ -1,0 +1,136 @@
+
+
+<view class="top-swiper">
+<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="true" interval="5000" circular="true">
+   <block wx:for="{{proList}}" wx:key="unique" wx:for-index="id" wx:for-item="item">
+      <swiper-item>
+         <view id="{{item.businessCode}}" class="scroll-item" data-index='{{item.index}}' bindtap='selectProItem'>
+            <view class='proImg' style="position: relative">
+               <image src="{{item.proUrl}}" class="slide-image"  mode="aspectFill"/>
+               <view class="scroll-position" style="position: absolute">{{item.city}}  {{item.scenic}}</view>
+               <view class="scroll-name" style="position: absolute">{{item.name}}</view>
+               <view class="scroll-introduce" style="position: absolute">{{item.introduce}}</view>
+               <!-- <view class="picture_num" style="position:absolute">{{id+1}}/{{proList.length}}</view> -->
+            </view>
+         </view>
+      </swiper-item>
+   </block>
+</swiper>
+</view>
+
+<view class="activities">
+   <view class="title3">热门活动</view>
+    <scroll-view class="scroll-view_H" scroll-x scroll-with-animation style="width: 100%;height:240px" bindscroll="getSelectItem" scroll-left="{{scrollLeft}}">
+      <block wx:for="{{activityList}}"  wx:key="unique" wx:for-index="id" wx:for-item="item">
+         <view class="scroll_item {{item.selected ? 'selected' : ''}}" data-index='{{item.index}}'>
+            <view class='proImg' style="position: relative">
+               <image src="{{item.url}}" class="slide-image"  mode="aspectFill"/>
+               <view class="bottom-cover">
+                  <view class="map-and-address">
+                     <image class="map" src="../../images/icons/map.png"></image>
+                     <view class="address">{{item.address}}</view>
+                  </view>
+                  <view class="content">{{item.name}}</view>
+               </view>
+        <!-- <view class="picture_num" style="position:absolute">{{id+1}}/{{proList.length}}</view> -->
+        </view>
+       </view>
+     </block>
+  </scroll-view>
+</view>
+
+<view class="advertisements">
+   <image class="ad" src="../../images/advertisement/ad.png"></image>
+</view>
+
+<view class="house-recommend">
+
+   <view class="house-text">
+      民宿推荐
+   </view>
+
+   <view class="house-list">
+   <block wx:for="{{houseList}}" wx:for-item="item" wx:for-index="index">
+      <view class="item">
+         <view class="item_img" id="{{item.businessCode}}" bindtap="houseDetail" style="position: relative">
+            <image class="house-img" src="{{item.houseUrl}}"></image>
+
+            <view class="bottom-cover2" style="position: absolute">
+            <view class="map-and-address">
+               <view class="name">{{item.name}}</view>
+               <view class="map-and-address" style="display: flex">
+                  <image class="map" src="../../images/icons/map.png"></image>
+                  <view class="address">{{item.address}}</view>
+               </view>
+            </view>
+
+            <view class="tags" style="display: flex">
+               <view class="tag1">{{item.tag1}}</view>
+               <view class="tag2">{{item.tag2}}</view>
+            </view>
+
+            <view class="price">价格: ¥{{item.price}}起</view>
+         </view>
+
+         </view>
+
+      </view>
+   </block>
+   </view>
+</view> 
+
+<!-- </view> -->
+ 
+<!--活动-->
+<!-- <view hidden="{{currentTab!==1}}">
+<view class="near">
+  <text>附近活动</text>
+  <text>更多 ></text>
+</view> -->
+
+<!-- <view class="activity-list">
+<block wx:for="{{nearList}}" wx:for-item="item" wx:for-index="index">
+    <view class="item_img">
+         <image src="{{item.activityUrl}}"></image>
+    </view>
+
+   <view class="description">
+   
+      <view class="activity-time">{{item.time}}</view>
+      <view class="activity-name">{{item.location}} · {{item.name}}</view>
+      <view class="activity-describe">{{item.describe}}</view>
+      <view class="picture">
+         <view class="share-img">
+            <image src="../../images/phone.png"/>
+         </view>
+      <view class="like-img">
+         <image src="../../images/phone.png"/>
+      </view>
+   </view>
+   </view>
+</block>
+</view>
+
+<!-- <view class="hot-activity-text">热门活动</view>
+   <view class="hot-list">
+   <block wx:for="{{hotList}}" wx:for-item="item" wx:for-index="index">
+   <view class="hot-item">
+      <view class="hot-img">
+         <image src="{{item.hotUrl}}"></image>
+      </view>
+   <view class="name-and-price">
+      <text class="hot-name">{{item.location}} · {{item.name}}</text>
+      <text class="hot-price">¥ {{item.price}}/人</text>
+   </view>
+   <view class="hot-describe">{{item.describe}}</view>
+   <view class="sign-up">已有{{item.signUp}}人报名</view>
+   </view>
+</block>
+</view>
+</view> -->
+
+<!--社区-->
+<!-- <view hidden="{{currentTab!==2}}">
+  tab_03
+</view> -->
+

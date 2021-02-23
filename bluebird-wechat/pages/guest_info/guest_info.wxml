@@ -1,0 +1,31 @@
+<!--pages/guest_info/guest_info.wxml-->
+<!--pages/guest_info/guest_info.wxml-->
+<view class="guest-text">
+  <view class="guest-info-text">房客信息</view>
+  <view class="guest-info-content">提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒</view>
+</view>
+
+<view class="guest-info" wx:for="{{guestList}}" wx:for-item="item" wx:for-index="index">
+  <switch name="switch{{index}}"></switch>
+  <view class="guest-name">{{item.guestName}}</view>
+  <view class="guest-identification">身份证·{{item.guestIdentification}}</view>
+</view>
+
+<view class="add-guest">
+  <view class="add">
+    <view class="add-text">添加房客信息</view>
+    <view class="add-icon">
+      <image src="../../images/icons/plus.png"></image>
+    </view>
+  </view>
+  <view class="remind">
+  提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒提醒
+  </view>
+</view>
+
+<view class="page_hd">
+  <view class="block">
+    <view class="choose-text">已选{{guestNum}}份房客资料</view>
+    <view class="save">保存</view>
+  </view>
+</view>

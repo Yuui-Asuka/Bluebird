@@ -1,0 +1,153 @@
+/* pages/mine/mine.wxss */
+/* pages/mine/mine.wxss */
+
+.top{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.user-name{
+  font-size: 50rpx;
+  font-weight: 600;
+  margin-bottom: 15rpx;
+}
+
+.remind{
+  font-size: 25rpx;
+}
+
+.top image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.back image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+}
+
+.card{
+  color: white;
+  background-image: linear-gradient(to bottom right, rgb(109, 139, 139), rgb(26, 235, 235));
+  margin-top: 50rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  border-radius: 10px;
+}
+
+.can-see image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.fund-text, .can-see{
+  margin-top: 15rpx;
+  font-size: 35rpx;
+}
+
+.charge-text{
+  height: 40rpx;
+  line-height: 40rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  border-radius: 5px;
+  border: white solid 2rpx;
+  font-size: 28rpx;
+  margin-top: 15rpx;
+}
+
+.first-line, .second-line{
+  justify-content: space-between;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+}
+
+.second-line{
+  margin-top: 25rpx;
+  padding-bottom: 20rpx;
+}
+
+.rest-money{
+  width: 180rpx;
+  margin-left: 40rpx;
+}
+
+.points{
+  width: 180rpx;
+}
+
+.certificate{
+  width: 180rpx;
+  margin-right: 60rpx;
+}
+
+.points-num,.money-num ,.certificate-num{
+  text-align: center;
+
+}
+
+.block{
+  height: 710rpx;
+}
+
+.money-text, .points-text, .certificate-text{
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.back-color{
+  background: rgb(243, 237, 237);
+  height: 810rpx;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+  top: -100rpx;
+}
+
+.my-order, .my-love, .service, .advise, .about-us{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  margin-top: 20rpx;
+  height: 85rpx;
+  font-size: 35rpx;
+  border-radius: 5px;
+  line-height: 80rpx;
+}
+
+#d1, #x1, #k1, #f1, #p1{
+  margin-left: -400rpx;
+}
+
+#d2, #x2, #k2, #f2, #p2{
+  margin-right: 20rpx;
+}
+
+.member{
+  align-items: center;
+  height: 32rpx;
+  line-height: 32rpx;
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+  font-size: 25rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  color: grey;
+  border: solid 2rpx rgb(189, 188, 188);
+  border-radius: 10px;
+}
+
+.member.active{
+  color: pink;
+  border: solid 2rpx pink;
+}
+
+
+
+

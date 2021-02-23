@@ -1,0 +1,478 @@
+/* pages/house_set/house_set.wxss */
+/* pages/house_set/house_set.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+  font-size: smaller;
+  padding-bottom: 30rpx;
+  bottom: 0em;
+}
+
+.navbar .item{
+  border-bottom: 5rpx solid #ececec;
+  position: relative;
+  font-size: 28rpx;
+  font-weight: 700;
+  color: rgba(66, 66, 66, 0.733);
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.navbar .item.active{
+  color: #5E7E7E;
+  font-size: 35rpx;
+}
+
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5rpx;
+  background: #5E7E7E;
+}
+
+.houseList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.houseList .house-item:nth-child(odd){
+  margin-top: 30rpx;
+  width: 46%;
+  margin-right: 8rpx;
+  margin-left: 20rpx;
+  background: rgb(241, 241, 241);
+  border-radius: 10px;
+  
+}
+
+.houseList .house-item:nth-child(even){
+  margin-top: 30rpx;
+  width: 46%;
+  margin-right: 20rpx;
+  margin-left: 8rpx;
+  background: rgb(241, 241, 241);
+  border-radius: 10px;
+}
+
+.item-img{
+  border-radius: 10px 10px 0px 0px;
+}
+
+.house-item{
+  box-shadow: 3px 3px 2px rgb(233, 232, 232);
+}
+
+.house-item .house-img{
+  width: 100%;
+  height: 380rpx;
+  /*border: white solid 5rpx;*/
+
+  border-radius: 10px 10px 0px 0px;
+  
+}
+
+.head-img image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50rpx;
+  margin-top: -60rpx;
+  margin-left: 240rpx;
+  border: rgb(184, 183, 183) solid 5rpx;
+}
+
+.item-img .save{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: -60rpx;
+  margin-top: 30rpx
+}
+
+
+.city-and-house-name{
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+  font-size: 25rpx;
+  font-weight: 700;
+  color: #5E7E7E;
+}
+
+.house-style{
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.house-tags{
+  display: flex;
+  padding-bottom: 30rpx;
+  border-bottom: #e0dede solid 5rpx;
+}
+
+.house-tags .tag1,.tag2,.tag3{
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  width: fit-content;
+  height: 15px;
+  line-height: 15px;
+  margin-left: 15rpx;
+  margin-top: 20rpx;
+  background: rgb(241, 233, 241);
+  border-radius: 100px;
+  text-align: center;
+  font-weight: 650;
+  font-size: 22rpx;
+  color: #5E7E7E;
+  border: solid 1rpx #5E7E7E;
+}
+
+.house-price{
+  margin-left: 30rpx;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+
+.house-price #price{
+  font-weight: 600;
+  font-size: 33rpx;
+}
+
+.house-price #one-night{
+  margin-left: 5rpx;
+  font-size: 31rpx;
+  opacity: 0.9;
+}
+
+.search-button image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 15rpx;
+  margin-left: 30rpx;
+}
+
+.search-condition image{
+  width: 40rpx;
+  height: 20rpx;
+}
+
+.city, .destination, .comprehensive-sequencing{
+  font-size: 30rpx;
+  align-items: center;
+  margin-left: 40rpx;
+  padding-right: 40rpx;
+  margin-bottom: 10rpx;
+  border-right: solid 2rpx rgb(235, 235, 235);
+  opacity: 0.8;
+}
+
+.search-condition .triangle{
+    width: 0;
+    height: 0;
+    border: 15rpx solid transparent;
+    border-top: 15rpx solid black;
+    margin-top: 10rpx;
+    opacity: 0.7;
+    margin-left: 20rpx;
+}
+
+label{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 80rpx;
+  justify-content: space-around;
+}
+
+label .weui-cell__hd{
+  margin-left: 80rpx;
+  margin-right: 80rpx;
+}
+
+.todo-input{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn_ok{
+  margin-left: auto;
+}
+
+.hot-city{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  padding-bottom: 20rpx;
+}
+
+
+.hot-city .hot-city-text{
+  font-size: 35rpx;
+  margin-bottom: 30rpx;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.block{
+  flex-flow:row wrap;
+  justify-content: center;
+}
+
+.item{
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 25rpx;
+  width: 100rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 1rpx rgb(221, 221, 221);
+}
+
+.item.active{
+  color: white;
+  background: #5E7E7E;
+  border: solid 1rpx #5E7E7E;
+}
+
+.drawer-content-sequence .weui-cell__bd{
+  font-size: 27rpx;
+}
+
+.drawer-content-sequence label{
+  justify-content: space-between;
+}
+
+.todo-input{
+  font-size: 40rpx;
+}
+
+.search-box{
+  align-items: center;
+  margin-left: 30rpx;
+  margin-bottom: 30rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 20rpx;
+  box-shadow: 0px 0px 4px 4px rgba(202, 202, 202, 0.205);
+}
+
+.search-input{
+  margin-right: 20rpx;
+}
+
+.search-box input{
+  outline-style: none;
+  border-radius: 3px;
+  padding: 1px 1px;
+  width: 350rpx;
+  height: 50rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.search-box input:focus{
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+.search-box-and-button{
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  align-items: center;
+}
+
+.search-time{
+  font-size: 28rpx;
+  color: #5E7E7E;
+  padding-left: 15rpx;
+  border-left: solid 3rpx rgb(230, 230, 230);
+}
+/* .select_box{
+  width:45%;
+  height:70%;
+  border-radius: 14rpx;
+  position: relative;
+}
+.select_box .select{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 10rpx;
+}
+.select_box .select .select_text{
+  font-size: 26rpx;
+  color: #777777;
+  line-height: 28rpx;
+  flex: 1;
+}
+.select_box .select .select_img{
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+  transition:transform 0.3s;
+}
+.select_box .select .select_img_rotate{
+  transform:rotate(180deg);
+  margin-bottom: 20rpx;
+}
+.select_box .option_box{
+  position: absolute;
+  top: calc(100% - 1px);
+  width: 100%;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  background: #fff;
+  transition: height 0.3s;
+  border-left:1px solid #efefef;
+  border-right:1px solid #efefef;
+}
+.select_box .option_box .option{
+  display: block;
+  line-height: 30rpx; 
+  font-size: 26rpx;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+}
+
+
+
+.page-top{
+  height: 300rpx;
+}
+
+.search-input{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.push-choose{
+  margin-bottom: 40rpx;
+} */
+
+.btn {
+  width: 80%;
+  padding: 20rpx 0;
+  border-radius: 10rpx;
+  text-align: center;
+  margin: 40rpx 10%;
+  background: #000;
+  color: #fff;
+}
+ 
+/*mask*/
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+ 
+/*content*/
+.drawer_box {
+  width: 500rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 1001;
+  background: #FAFAFA;
+  margin: -200px 125rpx 100px 125rpx;
+  border-radius: 10px;
+}
+ 
+.drawer_title{
+  padding:15px;
+  font: 20px "microsoft yahei";
+  text-align: center;
+}
+.drawer_content {
+  height: 210px;
+  overflow-y: scroll; /*超出父盒子高度可滚动*/
+}
+ 
+.btn_ok{
+  padding: 10px;
+  font: 20px "microsoft yahei";
+  text-align: center;
+  border-top: 1px solid #E8E8EA;
+  color: #3CC51F;
+}
+ 
+.top{
+	padding-top:8px;
+}
+.bottom {
+	padding-bottom:8px;
+}
+.title {
+	height: 30px;
+	line-height: 30px;
+	width: 160rpx;
+	text-align: center;
+	display: inline-block;
+	font: 300 28rpx/30px "microsoft yahei";
+}
+ 
+.input_base {
+	border: 2rpx solid #ccc;
+	padding-left: 10rpx;
+	margin-right: 50rpx;
+}
+.input_h30{
+	height: 30px;
+	line-height: 30px;
+}
+.input_h60{
+	height: 60px;
+}
+.input_view{
+	font: 12px "microsoft yahei";
+	background: #fff;
+	color:#000;
+	line-height: 30px;
+}
+ 
+input {
+	font: 12px "microsoft yahei";
+	background: #fff;
+	color:#000 ;
+}
+radio{
+	margin-right: 20px;
+}
+.grid { display: -webkit-box; display: box; }
+.col-0 {-webkit-box-flex:0;box-flex:0;}
+.col-1 {-webkit-box-flex:1;box-flex:1;}
+.fl { float: left;}
+.fr { float: right;}
+
+

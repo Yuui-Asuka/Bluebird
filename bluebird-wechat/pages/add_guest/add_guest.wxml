@@ -1,0 +1,31 @@
+<!--pages/add_guest/add_guest.wxml-->
+<!--pages/add_guest/add_guest.wxml-->
+<view class="top">
+  <view class="cancel">×</view>
+  <view class="save-text" bindtap="saveInfo">保存</view>
+</view>
+
+<view class="add-info">
+  <view class="add-text">新增个人资料</view>
+  <view class="country">
+    <text class="country-text">国家/地区: </text>
+    <text class="country-choose">{{chosenArea}}</text>
+  </view>
+</view>
+
+
+<view class="name">
+  <view class="zh-name">中文姓名</view>
+  <input class="input-name" placeholder="与身份证姓名一致" type="text" bindinput='getName' maxlength="5"></input>
+</view>
+
+
+<view class="iden">
+  <view class="identification">身份证号</view>
+  <input class="input-number" placeholder="请输入身份证号" type="idcard" bindinput='getId' maxlength="18"></input>
+</view>
+
+<view class="phone">
+  <view class="telephone">电话</view>
+  <input class="input-number" placeholder="请输入电话号码" type="number" bindinput='getPhone' maxlength="11"></input>
+</view>

@@ -1,0 +1,68 @@
+<!--pages/wait_pay/wait_pay.wxml-->
+<!--pages/wait_pay/wait_pay.wxml-->
+<view class="wait-pay" wx:if="{{orderState==0}}">
+    <view class="wait-pay-text">待支付</view>
+    <view class="wait-pay-remind">订单已下单成功，请在15分钟内支付，超时未支付的订单将自动取消</view>
+</view>
+
+<view class="wait-pay" wx:if="{{orderState==1}}">
+    <view class="wait-pay-text">进行中</view>
+    <view class="wait-pay-remind">订单进行中</view>
+</view>
+
+<view class="wait-pay" wx:if="{{orderState==2}}">
+    <view class="wait-pay-text">已完成</view>
+    <view class="wait-pay-remind">您已完成该订单</view>
+</view>
+
+<view class="order">
+  <view class="title" style="display: flex">
+    <view class="house-name">{{city}} · {{houseName}}</view>
+    </view>
+    <view class="order-items" wx:for="{{orderList}}" wx:for-item="item" wx:for-index="index">
+      <view class="item" style="display: flex">
+        <view class="img-name-time" style="display:flex">
+          <view class="item-img">
+            <image src="{{item.picture}}"></image>
+          </view>
+          <view class="name-and-time">
+            <view class="name-text">{{item.name}}</view>
+            <view class="time-text">{{item.time}}</view>
+          </view>
+        </view>
+        <view class="price-and-num">
+          <view class="price">¥ {{item.singlePrice}}</view>
+          <view class="num">x {{item.num}}</view>
+          <view class="cancel" id="{{index}}" bindtap="cancelOrder" wx:if="{{orderState==0}}">取消</view>
+        </view>
+      </view>
+    </view>
+</view>
+
+<view class="all-money">
+  <view class="fee-text">订单总金额: </view>
+  <view class="fee">{{totalPrice}}</view>
+</view>
+
+<view class="guest-message">
+  <view class="message-text">房客信息: 共{{peopleList.length}}人</view>
+  <block wx:for="{{peopleList}}" wx:for-item="item" wx:for-index="index">
+   <view class="guest">
+    <view class="name">{{item.guestName}}</view>
+    <view class="phone">联系电话: {{item.phone}}</view>
+    <view class="ident">身份证: {{item.identification}}</view>
+   </view>
+</block>
+</view>
+
+<view class="order-code">
+  订单编号: {{orderCode}}
+</view>
+
+<view class="cancel-order">
+  <view class="cancel-policy">退改政策: 商家未确认之前可直接退房，商家确认订单之后退改需要经过平台审核，入住之后不可退房。</view>
+</view>
+
+<view class="pay" wx:if="{{orderState==0}}">
+  <button class="pay-now" bindtap="payNow">立即支付</button>
+</view>

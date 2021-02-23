@@ -1,0 +1,619 @@
+/* pages/house/house.wxss */
+
+.scroll-view_H{
+  background: white;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.picture_num{
+margin-top: 250rpx;
+margin-left: 350rpx;
+color: #ffffff;
+font-size: 22rpx;
+}
+
+.scroll_item {
+position: relative;
+width: 100%;
+display: inline-block;
+overflow: hidden;
+box-shadow: 0 0 10px #ccc;
+vertical-align: middle;
+top: 5%;
+bottom: 10%;
+height: 100%;
+background-color: #fff;
+}
+
+.scroll_item .proImg{
+  position: absolute;
+  width: 100%;
+  max-height: 200rpx;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.scroll_item image {
+  width: 100%;
+  float: left;
+}
+
+.title{
+  font-weight: 600;
+  font-size: 35;
+  margin-top: 5rpx;
+}
+
+.title image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.details{
+  margin-top: -40rpx;
+  width: 100%;
+}
+
+.details .info{
+  min-height: 200rpx;
+  background: #d3d0d0;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border-radius: 50rpx;
+  opacity: 0.95;
+}
+
+.details .date{
+  min-height: 80rpx;
+  background: #d3d0d0;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border-radius: 50rpx;
+  opacity: 0.95;
+}
+
+.details .boss-introduce{
+  min-height: 250rpx;
+  background: #d3d0d0;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border-radius: 50rpx;
+  opacity: 0.95;
+  
+}
+
+.address image{
+  width: 40rpx;
+  height: 40rpx;
+
+}
+
+.address text{
+  float:right;
+  font-size: 23rpx;
+  margin-left: 25rpx;
+  opacity: 0.8;
+}
+
+.phone image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.tags image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+}
+
+.info .title text{
+margin-left: 30rpx;
+margin-top: 15rpx;
+}
+
+.details .describe{
+  margin-left: 100rpx;
+  font-size: 30rpx;
+  font-size: 23rpx;
+  margin-right: 300rpx;
+  opacity: 0.8;
+}
+
+.tags .tag1{
+  min-width: 50rpx;
+  font-size: 30rpx;
+  float: right;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-right: 380rpx;
+  height: 15px;
+  background: rgb(255, 238, 235);
+  border-radius: 15%;
+  text-align: center;
+  font-size: 22rpx;
+  color: #ff7654;
+  border: solid 1rpx #ffac3f;
+}
+
+.tags .tag2{
+  min-width: 50rpx;
+  font-size: 30rpx;
+  float: right;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  height: 15px;
+  background: rgb(255, 238, 235);
+  border-radius: 15%;
+  text-align: center;
+  font-size: 22rpx;
+  color: #ff7654;
+  border: solid 1rpx #ffac3f;
+}
+
+.tags .tag3{
+  min-width: 50rpx;
+  font-size: 30rpx;
+  float: right;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  height: 15px;
+  background: rgb(255, 238, 235);
+  border-radius: 15%;
+  text-align: center;
+  font-size: 22rpx;
+  color: #ff7654;
+  border: solid 1rpx #ffac3f;
+}
+
+.price{
+  margin-left: 60%;
+  margin-top: 80rpx;
+}
+
+.price .price-text{
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.num{
+  margin-top: 10rpx;
+  margin-left: 65%;
+}
+
+.num .blank-num{
+  font-size: 25rpx;
+}
+
+.address{
+  margin-left: 30rpx;
+}
+.tags{
+  margin-left: 30rpx;
+}
+.title{
+  margin-left: 30rpx;
+}
+.phone{
+  margin-top: 150rpx;
+  margin-left: 90%;
+}
+
+.in{
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+  margin-right: 40rpx;
+}
+
+.in #m1,#d1{
+  font-size: 25rpx;
+  font-weight: 600;
+}
+
+
+.in #month1,#day1{
+  font-weight: 700;
+}
+
+#stay{
+  font-size: 22rpx;
+  margin-left: 10rpx;
+}
+
+#leave{
+  font-size: 22rpx;
+  margin-left: 10rpx;
+}
+
+.out #month2,#day2{
+  font-weight: 700;
+}
+
+.out{
+  margin-top: 15rpx;
+  margin-left: 250rpx;
+  margin-right: 40rpx;
+}
+
+.out #m2,#d2{
+  font-size: 25rpx;
+  font-weight: 600;
+}
+
+.date .night{
+  margin-left: 85%;
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  font-weight: 550;
+}
+
+
+
+.boss-introduce-text{
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+  font-weight: 700;
+}
+
+.boss-home{
+  margin-top: 20rpx;
+  margin-left: 70%;
+  font-size: 25rpx;
+  color: rgb(48, 97, 202)
+}
+.img-and-name{
+  margin-top: 70rpx;
+  margin-left: 15rpx;
+  display: flex;
+  align-items: center;
+}
+
+.img-and-name .head-img{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50px;
+}
+
+.img-and-name text {
+  margin-left: 20rpx;
+}
+
+.house-describe{
+  margin-top: 160rpx;
+}
+
+
+
+.boss-introduce{
+  margin-top: 80rpx;
+}
+
+/* .boss-introduce .investigate-me{
+  margin-left: 30rpx;
+  font-size: 35rpx;
+  font-weight: 700;
+} */
+
+.house-describe .house-text{
+  margin-top: -20rpx;
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+  font-size: 25rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow:hidden; 
+}
+
+.ellipsis{
+  -webkit-line-clamp:2; 
+  opacity: 0.75 
+}
+.unellipsis{
+  -webkit-line-clamp:0; 
+  opacity: 1 
+}
+
+
+.boss-introduce .unfold-button{
+  margin-left: 85%;
+  margin-top: 5rpx;
+  font-size: 25rpx;
+  color: rgb(64, 93, 224);
+}
+
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+  font-size: smaller;
+}
+
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.navbar .item.active{
+  color: rgb(29, 150, 65);
+}
+
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: rgb(52, 219, 74);
+}
+
+.page_hd{
+  position:fixed; 
+  bottom:0;
+  width: 750rpx;
+  height: 60rpx;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.chat{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 10%;
+}
+
+.like{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 10%;
+}
+
+.share{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 10%;
+}
+
+.choose{
+  width: 310rpx;
+  height: 50rpx;
+  margin-left: 10%;
+  background: #ff7654;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: small;
+  line-height: 50rpx;
+  font-weight: 500;
+}
+
+
+
+.btn {
+  width: 80%;
+  padding: 20rpx 0;
+  border-radius: 10rpx;
+  text-align: center;
+  margin: 40rpx 10%;
+  background: #0C1939;
+  color: #fff;
+}
+/*mask*/
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+}
+
+.drawer_attr_box {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1001;
+  background: #fff;
+}
+
+
+.drawer_content {
+  padding: 20rpx 20rpx;
+  height: 550rpx;
+  overflow-y: scroll;
+}
+/* .drawer_title{
+  padding:20rpx;
+  font:42rpx "microsoft yahei";
+  text-align: center;
+} */
+/* .line{
+  border-bottom: 1px solid #f8f8f8;
+} */
+
+.room-layout{
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+
+.room-layout .type-text{
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+  font-weight: 500;
+}
+
+.room-layout .item{
+  width: 80rpx;
+  height: 50rpx;
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+  background: rgb(184, 182, 182);
+  float: right;
+  font-size: 25rpx;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 5rpx;
+}
+
+.room-layout .item.active{
+  border: solid 1px #ff7654;
+  background: #e7ad9e;
+  color: #ff7654;
+}
+
+.activity-choose{
+  margin-top: 50rpx;
+}
+
+.activity-choose .activity-choose-text{
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+  font-weight: 500;
+}
+
+.activities{
+  display: flex;
+  padding: 0 30rpx;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+
+.activity-choose .item{
+  width: 300rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  background: rgb(184, 182, 182);
+  float: right;
+  font-size: 25rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 5rpx;
+}
+
+.activity-choose .item.active{
+  border: solid 1px #ff7654;
+  background: #e7ad9e;
+  color: #ff7654;
+}
+
+.time-choose{
+  margin-top: 50rpx;
+}
+.time-choose .time-choose-text{
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+  font-weight: 500;
+}
+
+.time-choose .item{
+  width: 600rpx;
+  height: 60rpx;
+  margin-top: 15rpx;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(184, 182, 182);
+  font-size: 25rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 5rpx;
+}
+
+.time-choose .item.active{
+  border: solid 1px #ff7654;
+  background: #e7ad9e;
+  color: #ff7654;
+}
+
+.total-price{
+  overflow: hidden;
+}
+
+.total-price .price-text{
+  float: right;
+  margin-right: 50rpx;
+  margin-top: 50rpx;
+  font-weight: 500;
+}
+
+.total-price .price-number{
+  font-size: 40rpx;
+  font-weight: 600;
+  color: rgb(219, 87, 26);
+  margin-right: 50rpx;
+  margin-top: 50rpx;
+  float: right;
+}
+
+.ensure-pay-btn{
+  margin-top: 50rpx;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(219, 87, 26);
+  color: white;
+  text-align: center;
+  border-radius: 5rpx;
+}
+
+.activity-list {
+  margin-top: 15rpx;
+  display: flex;
+  padding: 0 30rpx;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
+.activity{
+  margin-top: 35rpx;
+  width: 98%;
+}
+
+.activity-img image{
+  width: 100%;
+  height: 400rpx;
+  border-radius: 2%;
+}
+
+.activity .activity-name{
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 5rpx;
+  font-size: 45rpx;
+  font-weight: bolder;
+}
+
+.activity .activity-describe{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 15rpx;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.activity .activity-price{
+    float: right;
+    margin-top: 20rpx;
+    margin-right: 20rpx;
+    background: rgb(253, 92, 64);
+    width: 280rpx;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    padding-top: 5rpx;
+    padding-bottom: 5rpx;
+    color: #ffffff;
+}

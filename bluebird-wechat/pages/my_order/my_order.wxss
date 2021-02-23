@@ -1,0 +1,179 @@
+/* pages/my_order/my_order.wxss */
+/* pages/my_order/my_order.wxss */
+page{
+  background: rgb(235, 220, 225);
+}
+
+.navbar{
+  /* flex: none; */
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  font-size: smaller;
+  box-shadow: 1px 1px 5px 1px rgb(179, 176, 176),-1px 1px 5px 1px rgb(179, 176, 176)  ;
+  width: 99%;
+}
+
+.navbar .items{
+  position: relative;
+  /* flex: auto; */
+  text-align: center;
+  line-height: 80rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar .items.active{
+  color: #5E7E7E;
+}
+
+.navbar .items.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -30%;
+  right: 0;
+  width: 160%;
+  height: 4rpx;
+  background: #5E7E7E;
+}
+
+.order{
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  margin-top: 20rpx;
+  background: rgb(252, 252, 252);
+  border-radius: 10px;
+}
+.title{
+  padding-top: 10rpx;
+  padding-left: 50rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.title .house-name{
+  color: #5E7E7E;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.title .wait-pay{
+  color: #f5a97d;
+  font-size: 31rpx;
+  margin-left: 100rpx;
+}
+
+.item-img image{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.ing .item{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  justify-content: space-between;
+}
+
+.completed .item{
+  align-items: center;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  justify-content: space-between;
+}
+
+.completed .name-and-time{
+  margin-right: 250rpx;
+}
+
+.name-and-time{
+  margin-left: 20rpx;
+}
+
+.completed .combo{
+  font-size: 28rpx;
+  font-weight: 700;
+}
+
+.pay-complete{
+  font-size: 28rpx;
+  margin-left: 300rpx;
+  opacity: 0.8;
+}
+
+.name-and-time .name-text{
+  font-size: 35rpx;
+  font-weight: 600;
+}
+
+.name-and-time .time-text{
+  font-size: 25rpx;
+  opacity: 0.8;
+}
+
+.price-and-num{
+  margin-right: 0rpx;
+  margin-left: 15%;
+}
+
+.price-and-num .price{
+  color: #5E7E7E;
+}
+
+.price-and-num .num{
+  float: right;
+  font-size: 30rpx;
+  opacity: 0.8;
+}
+
+.bottom{
+  justify-content: space-between;
+  margin-top: 25rpx;
+  padding-top: 30rpx;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  padding-bottom: 30rpx;
+  border-top: solid 2rpx rgb(221, 221, 221);
+}
+
+.pay{
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 200rpx;
+  background: #5E7E7E;
+  color: white;
+  font-size: 30rpx;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.cancel-order{
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 200rpx;
+  background: #5E7E7E;
+  color: white;
+  font-size: 30rpx;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.bottom .cancel-button{
+  width: 200rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  background: #5E7E7E;
+  font-size: 30rpx;
+  color: white;
+  border-radius: 15px;
+}

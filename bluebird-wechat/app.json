@@ -1,0 +1,83 @@
+{
+  "usingComponents": {},
+  "pages": [
+    "pages/search/search",
+    "pages/house_set/house_set",
+    "pages/journey/journey",
+    "pages/before_login/before_login",
+    "pages/mine/mine",
+    "pages/house_detail/house_detail",
+    "pages/my_certification/my_certification",
+    "pages/charge/charge",
+    "pages/wait_pay/wait_pay",
+    "pages/my_order/my_order",
+    "pages/help/help",
+    "pages/my_love/my_love",
+    "pages/map/map",
+    "pages/guest_info/guest_info",
+    "pages/book_details/book_details",
+    "pages/add_guest/add_guest",
+    "pages/calendar/calendar",
+    "pages/book/book",
+    "pages/activity/activity",
+    "pages/house/house",
+    "pages/boss/boss",
+    "pages/test/test",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/recommend/recommend",
+    "pages/where/where",
+    "pages/which_style/which_style",
+    "pages/do_what/do_what",
+    "Components/calendar/calendar",
+    "Components/trolley/trolley"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "猫印民宿酷",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "black",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/icons/bottom_tab/search_grey.png",
+        "selectedIconPath": "images/icons/bottom_tab/search_purple.png"
+      },
+      {
+        "pagePath": "pages/recommend/recommend",
+        "text": "民宿集",
+        "iconPath": "images/icons/bottom_tab/house_set_grey.png",
+        "selectedIconPath": "images/icons/bottom_tab/house_set_purple.png"
+      },
+      {
+        "pagePath": "pages/journey/journey",
+        "text": "行程",
+        "iconPath": "images/icons/bottom_tab/journey_grey.png",
+        "selectedIconPath": "images/icons/bottom_tab/journey_purple.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/icons/bottom_tab/mine_grey.png",
+        "selectedIconPath": "images/icons/bottom_tab/mine_purple.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "debug": true,
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息仅用于地图定位"
+    }
+  },
+  "requiredBackgroundModes": [
+    "location"
+  ]
+}

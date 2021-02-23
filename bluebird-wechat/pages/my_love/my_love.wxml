@@ -1,0 +1,24 @@
+<!--pages/my_love/my_love.wxml-->
+<!--pages/my_love/my_love.wxml-->
+<view class="top">我的喜欢
+</view>
+
+<view class="list">
+<block wx:for="{{loveList}}" wx:for-item="item" wx:for-index="index">
+  <view class="item" style="display: flex">
+    <view class="item_img" style="position: relative" id="{{index}}">
+      <image src="{{item.img}}"></image>
+      <image src="{{item.like}}" style="position: absolute; z-index: 1000"></image>
+    </view>
+    <view class="description"  bindtap="houseDetail">
+      <view class="item_name">{{item.city}} · {{item.houseName}}</view>
+      <view class="item_style">{{item.style}}</view>
+      <view class="price">
+        <text id="price">¥ {{item.price}}</text>
+        <text id="night">/晚</text>
+      </view>
+    </view>
+  </view>
+</block>
+</view>
+

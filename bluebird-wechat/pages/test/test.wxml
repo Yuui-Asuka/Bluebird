@@ -1,0 +1,59 @@
+<!--pages/test/test.wxml-->
+<!--pages/test.wxml-->
+<view class="sort">
+  <view class="sort_box">
+    <view class="item">
+       <view class="icon">后</view>
+       <text style="color: red">后端</text>
+    </view>
+
+    <view class="item">
+       <view class="icon">前</view>
+       <text>前端</text>
+    </view>
+
+    <view class="item">
+       <view class="icon">运</view>
+       <text>运维</text>
+    </view>
+
+    <view class="item">
+       <view class="icon">测</view>
+       <text>测试</text>
+    </view>
+  </view> 
+</view>
+<view class="str">
+<text>{{text+name}}</text>
+</view>
+<view style="text-align:center">考试成绩{{score}}分
+</view>
+<view class="evaluate">
+<view wx:if="{{score<60}}">不及格</view>
+<view wx:elif="{{score>=60&&score<70}}">及格</view>
+<view wx:elif="{{score>=70&&score<80}}">良好</view>
+<view wx:else="{{score>=80&&score<90}}">优秀</view>
+</view>
+
+<view class="list">
+<block wx:for="{{list}}" wx:for-item="item" wx:for-index="index">
+   <view class="item">
+      <view class="item_img">
+         <image src="{{item.img}}"></image>
+      </view>
+   <view class="item_name">{{item.name}}</view>
+   <view class="item_index">{{index}}</view>
+   </view>
+</block>
+</view>
+
+<button bindlongpress="changeData">按钮</button>
+<icon type="success" color="green"></icon>
+<progress percent="50" show-info="true" border-radius="20" active="true"></progress>
+
+<form>
+<view class="section">
+<text>{{myinput}}</text>
+<input placeholder="请输入" bindinput="inputFN"></input>
+</view>
+</form>

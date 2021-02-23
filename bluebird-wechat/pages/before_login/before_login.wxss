@@ -1,0 +1,32 @@
+/* pages/before_login/before_login.wxss */
+/* pages/before_login/before_login.wxss */
+
+.head-img{
+  width: 150rpx;
+  height: 150rpx;
+  margin-top: 200rpx;
+  margin-left: 300rpx;
+}
+
+
+.nick-name{
+  text-align: center;
+}
+
+.login-button{
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: space-around;
+  width: fit-content;
+  height: 80rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  line-height: 80rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button{
+  margin-left: auto;
+  margin-right: auto;
+}

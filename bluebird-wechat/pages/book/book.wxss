@@ -1,0 +1,234 @@
+/* pages/book/book.wxss */
+/* pages/book/book.wxss */
+
+.cancel{
+  font-size: 60rpx;
+  margin-left: 30rpx;
+
+}
+
+.trolley-image{
+  width: 60rpx;
+  height: 60rpx;
+  z-index: -1;
+}
+
+.item-nums{
+  width: 35rpx;
+  height: 35rpx;
+  font-size: 35rpx;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35rpx;
+  margin-left: 30rpx;
+  margin-top: -75rpx;
+  z-index: 1000;
+}
+
+.trolley{
+  margin-left: 600rpx;
+  margin-top: 20rpx;
+}
+
+.title{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.room-name-text{
+  width: 400rpx;
+}
+
+.room-name-text .city-and-name{
+  font-weight: 700;
+  margin-left: 20rpx;
+  color: rgb(95, 95, 95);
+}
+
+.room-name-text .book-text{
+  text-align: center;
+  margin-top: 10rpx;
+  font-size: 50rpx;
+  font-weight: 700;
+}
+
+.room-image image{
+  width: 200rpx;
+  height: 150rpx;
+  border-radius: 5px;
+}
+
+.remind{
+  margin-top: 70rpx;
+  margin-bottom: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  border-top: rgb(180, 180, 180) solid 2rpx;
+  border-bottom: rgb(180, 180, 180) solid 2rpx;
+}
+
+.remind #remind-title{
+  font-weight: 700;
+  font-size: 35rpx;
+}
+
+.remind #remind-text{
+  margin-top: 15rpx;
+  font-size: 22rpx;
+  letter-spacing: 3rpx;
+  line-height: 35rpx;
+  opacity: 0.8;
+}
+
+.date{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  justify-content: space-between;
+  margin-top: 40rpx;
+  padding-bottom: 40rpx;
+  border-bottom: rgb(180, 180, 180) solid 2rpx;
+}
+
+.stay-date-text, .leave-date-text, .num-text{
+  font-size: 26rpx;
+  margin-bottom: 15rpx;
+}
+
+.stay-date, .leave-date, .people-num .num{
+  font-size: 38rpx;
+  color: #5E7E7E;
+}
+
+.stay, .leave, .people-num{
+  text-align: center;
+}
+
+.all-night{
+  width: 40px;
+  height: 15px;
+  line-height: 15px;
+  margin-left: -80rpx;
+  margin-top: 25rpx;
+  background: rgb(241, 233, 241);
+  border-radius: 100px;
+  text-align: center;
+  font-weight: 650;
+  font-size: 22rpx;
+  color: #5E7E7E;
+  border: solid 1rpx #5E7E7E;
+}
+
+.leave{
+  margin-left: -80rpx;
+}
+
+.type{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.house-type{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-bottom: solid 2rpx rgb(180, 180, 180);
+}
+
+.type-button{
+  text-align: center;
+  line-height: 65rpx;
+  height: 65rpx;
+  width: 220rpx;
+  background: #5E7E7E;
+  color: white;
+  border-radius: 5px;
+}
+
+.type-description{
+  width: 180rpx;
+}
+
+.type-price{
+  margin-right: 100rpx;
+}
+
+.bed, .area, .capacity{
+  font-size: 25rpx;
+  opacity: 0.7;
+}
+
+.house-type .type-text{
+  margin-top: 30rpx;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.fee-details{
+  margin-top: 30rpx;
+  padding-bottom: 20rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-bottom: solid 2rpx rgb(180, 180, 180);
+}
+.fee-text{
+  font-size: 25rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+.fee-caculation{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  opacity: 0.9;
+  font-size: 35rpx;
+}
+
+.discount{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  opacity: 0.9;
+  font-size: 35rpx;
+}
+
+.discount .discount-num{
+  color: rgb(15, 199, 15);
+}
+
+.total-fee{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  margin-bottom: 120rpx;
+}
+
+.discount-text #second{
+  color: rgb(15, 199, 15);
+}
+
+button{
+  width: 90%;
+  color: white;
+  background:rgb(102, 28, 121)
+}
+
+.next-step{
+  padding-top: 30rpx;
+  box-shadow:inset 0px 10px 10px -15px #000;
+}
+
+
+
+/* .people-num .num{
+  margin-left: 40rpx;
+  color: rgb(227, 69, 248);
+} */

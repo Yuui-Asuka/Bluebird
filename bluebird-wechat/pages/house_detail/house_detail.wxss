@@ -1,0 +1,1097 @@
+/* pages/house_detail/house_detail.wxss */
+/* pages/house_detail/house_detail.wxss */
+
+.top{
+  height: 900rpx;
+  width: 100%;
+}
+
+swiper{
+  height: 900rpx;
+}
+
+/* .scroll-view_H{
+  background: white;
+  text-align: center;
+  white-space: nowrap;
+} */
+
+/* .picture_num{
+margin-top: 250rpx;
+margin-left: 350rpx;
+color: #ffffff;
+font-size: 22rpx;
+} */
+
+/* .scroll_item {
+width: 100%;
+display: inline-block;
+box-shadow: 0 0 10px #ccc;
+vertical-align: middle;
+background-color: #fff;
+} */
+
+/* .scroll_item .proImg{
+
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+} */
+
+/* .scroll_item image {
+  height: 900rpx;
+  width: 100%;
+  float: left;
+} */
+
+swiper image{
+  width: 100%;
+  height: 100%;
+}
+
+swiper .proImg{
+  height: 100%;
+}
+
+.visit{
+  width: 220rpx;
+  height: 60rpx;
+  background: rgb(247, 247, 247);
+  margin-top: 725rpx;
+  margin-left: 500rpx;
+  border-radius: 5px;
+  border: rgb(202, 200, 200) 4prx solid;
+}
+
+.visit text{
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  margin-right: 20rpx;
+  font-weight: 700;
+}
+
+.visit image{
+  height: 30rpx;
+  width: 30rpx;
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+}
+
+.story{
+  width: 220rpx;
+  height: 60rpx;
+  background: rgb(247, 247, 247);
+  margin-top: 800rpx;
+  margin-left: 500rpx;
+  border-radius: 5px;
+  border: rgb(202, 200, 200) 4prx solid;
+}
+
+.story text{
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  margin-right: 20rpx;
+  font-weight: 700;
+}
+
+.story image{
+  height: 30rpx;
+  width: 30rpx;
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+}
+
+.like{
+  position: relative;
+  margin-left: 550rpx;
+  margin-top: -40rpx;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 5px 1rpx grey;
+  width: 75rpx;
+  height: 75rpx;
+}
+
+.like image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.share{
+  position: relative;
+  border-radius: 50%;
+  background: white;
+  margin-left: 645rpx;
+  margin-top: -40rpx;
+  box-shadow: 0 2px 5px 1rpx grey;
+  width: 75rpx;
+  height: 75rpx;
+}
+
+.share image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.head-img image{
+  margin-top: -55rpx;
+  margin-left: 20rpx;
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  border: grey solid 1px;
+}
+
+.city-and-name{
+  margin-top: 80rpx;
+  margin-left: 30rpx;
+  font-size: 33rpx;
+  font-weight: 700;
+}
+
+.style{
+  margin-top: 15rpx;
+  margin-left: 30rpx;
+  font-size: 45rpx;
+  font-weight: 300;
+}
+
+.house-tags{
+  margin-left: 20rpx;
+  display: flex;
+}
+
+.house-tags .tag1,.tag2,.tag3{
+  width: fit-content;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  height: 15px;
+  line-height: 15px;
+  margin-left: 15rpx;
+  margin-top: 20rpx;
+  background: rgb(241, 233, 241);
+  border-radius: 100px;
+  text-align: center;
+  font-weight: 650;
+  font-size: 22rpx;
+  color: #5E7E7E;
+  border: solid 1rpx #5E7E7E;
+}
+
+.address{
+ margin-top: 40rpx;
+ margin-bottom: 20rpx;
+ background: rgb(230, 230, 230);
+ height: 60rpx;
+ align-items:center;
+
+}
+
+.address #address{
+  font-size: 27rpx;
+  line-height: 50rpx;
+  margin-left: 30rpx;
+}
+
+.address #map{
+  margin-top: 13rpx;
+  font-size: 27rpx;
+  margin-right: 20rpx;
+  /*margin-left: 150rpx;*/
+  color:#5E7E7E;
+}
+
+.introduce-details{
+  text-align: justify;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  font-size: 30rpx;
+  letter-spacing: 4rpx;
+  line-height: 45rpx;
+  color: rgb(60, 60, 60);
+}
+
+.activities{
+  margin-top: 80rpx;
+  margin-bottom: 150rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600rpx;
+  border: black solid 4rpx;
+}
+
+.page_hd{
+  padding-top: 20rpx;
+  box-shadow:inset 0px 10px 10px -15px #000;
+  position:fixed; 
+  bottom:0;
+  width: 750rpx;
+  height: 80rpx;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+
+.page_hd image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 20rpx;
+  z-index: -1;
+}
+
+.page_hd .item-nums{
+  width: 35rpx;
+  height: 35rpx;
+  font-size: 28rpx;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35rpx;
+  margin-left: 50rpx;
+  margin-top: -75rpx;
+  z-index: 1000;
+}
+
+.bottom-price {
+  margin-left: 120rpx;
+  width:300rpx;
+}
+
+.bottom-price #price{
+  font-size: 45rpx;
+  font-weight: 400;
+}
+
+.bottom-price #from{
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  opacity: 0.6;
+}
+
+.book image{
+  z-index: 1000;
+  margin-left: 10rpx;
+}
+
+.book{
+  margin-bottom: 10rpx;
+  display: flex;
+  align-items: center;
+  height: 75rpx;
+  width: 270rpx;
+  background:#5E7E7E;
+  color: white;
+  border-radius: 5px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.book image{
+  width: 55rpx;
+  height: 55rpx;
+  margin-left: 15rpx
+}
+
+.book text{
+  margin-left: 30rpx;
+  font-size: 35rpx;
+}
+
+/* .drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+} */
+
+
+.drawer_attr_box {
+  border-radius: 5px;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1001;
+  background: #fff;
+}
+
+.drawer_content {
+  padding: 0rpx 20rpx;
+  overflow-y: scroll;
+}
+
+.top2{
+  display: flex;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  padding-bottom: 30rpx;
+  justify-content: space-between;
+}
+
+.top2 image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.top2 .share2{
+  margin-left: 300rpx;
+}
+.top2 .like2{
+  margin-left: 400rpx;
+}
+
+.living-room, .bush-room, .bed-room{
+  padding-bottom: 20rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.living-room-text, .bush-room-text, .bed-room-text{
+  margin-left: 30rpx;
+  font-weight: 700;
+}
+.living-room .description, .bush-room .description, .bed-room .description{
+  margin-left: 30rpx;
+  font-size: 22rpx;
+}
+
+.living-room .img, .bed-room .img, .bush-room .img{
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.living-room image, .bed-room image, .bush-room image{
+  border-radius: 5px;
+}
+
+.placeholder{
+  height: 150rpx;
+}
+
+.price-and-book{
+  margin-top: 30rpx;
+}
+
+
+.price-and-book .book{
+  margin-right: 30rpx;
+}
+
+.low-price {
+  margin-left: 30%;
+  opacity: 0.8;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.low-price text:first-child{
+  font-size: 45rpx;
+}
+
+.low-price text:last-child{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+
+/* .drawer_content .like{
+  width: 60rpx;
+  height: 60rpx;
+} */
+
+.top3{
+  display: flex;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+  padding-right: 20rpx;
+  padding-bottom: 20rpx;
+  background: rgb(253, 238, 241)
+}
+
+.top3 .trolley-text{
+  margin: auto
+}
+
+.drawer_content2 {
+  padding: 0rpx 10rpx;
+  overflow-y: scroll;
+  background: rgb(253, 238, 241);
+}
+
+.house-img image, .activity-img image{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.trolley-contents{
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  border-radius: 5%;
+  background: white;
+}
+
+.trolley-contents .house-name{
+  padding-top: 15rpx;
+  padding-left: 30rpx;
+  color: #5E7E7E;
+  font-size: 30rpx;
+}
+
+.house-trolley, .single-activity{
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.activity-trolley .single-activity{
+  border-top: solid 2rpx rgb(221, 221, 221);
+}
+
+.night-and-price{
+  width: fit-content;
+  flex-shrink:0
+}
+
+.night-and-price .night{
+  font-size: 28rpx;
+  width: fit-content;
+}
+
+.house-type-and-time{
+  flex-shrink:1
+}
+
+.house-type-and-time, .activity-and-time{
+  margin-left: 10rpx;
+  width: 100%
+}
+
+.house-type-and-time .house-type, .activity-and-time .activity-text{
+  font-size: 35rpx;
+  font-weight: 700;
+}
+
+.house-type-and-time .house-time, .activity-and-time .activity-time{
+  font-size: 25rpx;
+  opacity: 0.8;
+}
+
+.house-price{
+  margin-right: 0%;
+}
+
+.house-price, .activity-price{
+  color: #5E7E7E
+}
+.activity-price{
+  height: 50rpx;
+  margin-top: 40rpx;
+}
+
+.sub-plus{
+  margin-left: 75%;
+  margin-top: -10rpx;
+}
+
+.sub-plus image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.sub-plus image{
+  margin-right: 15rpx;
+  margin-left: 15rpx;
+}
+
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+  font-size: smaller;
+}
+
+.navbar.topnav{
+  position: fixed;
+  top: 0;
+  z-index:99;
+  background: #fff;
+  width: 100%;
+}
+
+
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.navbar .item.active{
+  color: #5E7E7E;
+}
+
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #5E7E7E;
+}
+
+/* .house-tab, .activity-tab, .food-tab{
+  height: 800rpx;
+} */
+
+.remind{
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  border-top: rgb(180, 180, 180) solid 2rpx;
+  border-bottom: rgb(180, 180, 180) solid 2rpx;
+}
+
+.remind #remind-title{
+  font-weight: 700;
+  font-size: 35rpx;
+}
+
+.remind #remind-text{
+  margin-top: 15rpx;
+  font-size: 22rpx;
+  letter-spacing: 3rpx;
+  line-height: 35rpx;
+  opacity: 0.8;
+}
+
+.date{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  justify-content: space-between;
+  margin-top: 40rpx;
+  padding-bottom: 40rpx;
+  border-bottom: rgb(180, 180, 180) solid 2rpx;
+}
+
+.date .date-block{
+  justify-content: space-between;
+  width: 75%;
+}
+
+.stay-date-text, .leave-date-text, .num-text{
+  font-size: 26rpx;
+  margin-bottom: 15rpx;
+}
+
+.people-add-sub{
+  align-items: center;
+}
+
+
+.people-add-sub .subtract{
+  margin-top: 10rpx;
+  margin-right: 5rpx;
+}
+
+.people-add-sub .add{
+  margin-top: 10rpx;
+  margin-left: 5rpx;
+}
+
+.people-add-sub image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.stay-date, .leave-date, .people-num .num{
+  font-size: 38rpx;
+  color: #5E7E7E;
+}
+
+.stay, .leave, .people-num{
+  text-align: center;
+}
+
+.all-night{
+  width: 40px;
+  height: 15px;
+  line-height: 15px;
+  margin-left: -80rpx;
+  margin-top: 25rpx;
+  background: rgb(241, 233, 241);
+  border-radius: 100px;
+  text-align: center;
+  font-weight: 650;
+  font-size: 22rpx;
+  color: #5E7E7E;
+  border: solid 1rpx #5E7E7E;
+}
+
+.leave{
+  margin-left: -80rpx;
+}
+
+.type{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.house-block .house-type{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-bottom: solid 2rpx rgb(180, 180, 180);
+}
+
+.type-button{
+  text-align: center;
+  line-height: 65rpx;
+  height: 65rpx;
+  width: 220rpx;
+  background: white;
+  color: #5E7E7E;
+  border: solid 3rpx #5E7E7E;
+  border-radius: 5px;
+}
+
+.type-button.active{
+  color: white;
+  background: #5E7E7E;
+}
+
+.type-button.active::after{
+  content: "✓";
+}
+
+.type-description{
+  width: 180rpx;
+}
+
+.bed, .area, .capacity{
+  font-size: 25rpx;
+  opacity: 0.7;
+}
+
+.house-type .type-text{
+  margin-top: 30rpx;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.fee-details{
+  margin-top: 30rpx;
+  padding-bottom: 20rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-bottom: solid 2rpx rgb(180, 180, 180);
+}
+.fee-text{
+  font-size: 25rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+.fee-caculation{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  opacity: 0.9;
+  font-size: 35rpx;
+}
+
+.discount{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  opacity: 0.9;
+  font-size: 35rpx;
+}
+
+.discount .discount-num{
+  color: rgb(15, 199, 15);
+}
+
+.total-fee{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  margin-bottom: 120rpx;
+}
+
+.discount-text #second{
+  color: rgb(15, 199, 15);
+}
+
+
+.navbar1{
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  font-size: smaller;
+  padding-left: 15rpx;
+  margin-top: 10rpx;
+  font-size: 25rpx;
+  margin-bottom: 1000rpx;
+}
+
+.navbar1 .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+  border-right: solid 2rpx rgb(221, 221, 221); 
+}
+
+.navbar1 .item.active{
+  padding-right: 15rpx;
+  color: rgb(29, 150, 39);
+  border-right: solid 5rpx rgb(110, 201, 158);
+}
+
+.house-block{
+  margin-left: 120rpx;
+}
+
+.house-top{
+  display: flex;
+  align-items: center;
+}
+
+.house-top image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+}
+
+.house-top text{
+  color: #5E7E7E;
+  margin-left: 15rpx;
+}
+
+.food-select, .goods-select{
+  margin-top: 40rpx;
+  margin-left: 150rpx;
+  margin-right: 15rpx;
+}
+
+.food-select .select-text, .goods-select .select-text{
+  font-size: 40rpx;
+  font-weight: 600;
+  opacity: 0.8;
+  margin-bottom: 15rpx;
+}
+
+.food-select .item, .goods-select .item{
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 2rpx rgb(221, 221, 221)
+}
+
+.food-select .item .food-name{
+  font-size: 33rpx;
+  font-weight: 800;
+  margin-right: 5rpx;
+}
+
+.food-select .item .food-material-and-time{
+  font-size: 25rpx;
+  opacity: 0.8;
+  width: 300rpx;
+}
+
+.food-select .item .price{
+  opacity: 0.8;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+}
+
+.goods-select{
+  padding-bottom: 40rpx;
+  border-bottom: solid 3rpx rgb(221, 221, 221);
+}
+
+.add-to-trolley{
+  font-size: 23rpx;
+  width: 130rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  background: #5E7E7E;
+}
+
+.goods-name{
+  font-size: 33rpx;
+  font-weight: 800;
+}
+
+.goods-list .description{
+  font-size: 25rpx;
+  opacity: 0.8;
+}
+
+.food-total-price{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 30rpx;
+  justify-content: space-between;
+}
+
+.activity-total-price{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 30rpx;
+  justify-content: space-between;
+}
+
+.subtract-and-plus{
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subtract-and-plus .select-num{
+  margin-top: -10rpx;
+}
+
+.subtract-and-plus image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.activity-tab .activity-img image{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.activity-tab .unfold image{
+  width: 50rpx;
+  height: 25rpx;
+}
+
+.activity-tab{
+  margin-left: 150rpx;
+  margin-right: 30rpx;
+}
+
+.activity-tab .item{
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.activity-tab .name{
+  font-weight: 700;
+
+}
+
+.activity-tab .description{
+  font-size: 25rpx;
+  opacity: 0.8;
+}
+
+.activity-tab .activity-select{
+  font-size: 38rpx;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.outer-block{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.t-item{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.t-item .a-year{
+  font-size: 25rpx;
+  color: #5E7E7E;
+}
+
+.t-item .a-date{
+  font-size: 30rpx;
+  color: #5E7E7E;
+}
+
+.facilities-tab .service-img image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.facilities-and-service{
+  margin: 20rpx 20rpx 20rpx 20rpx;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+}
+
+.facilities-and-service .item{
+  padding-left: 30rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.facilities-text, .introduce-text, .should-konw-text{
+  margin-bottom: 20rpx;
+  font-weight: 700;
+  opacity: 0.7;
+  text-align: justify;
+}
+
+.service-name .service{
+  font-size: 25rpx;
+  text-align: center;
+  width: 100rpx;
+}
+
+.service-content{
+  opacity: 0.8;
+  height: 100rpx;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+  font-size: 25rpx;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+.service-content .s-item{
+  width: 200rpx;
+}
+
+.s-item{
+  align-items: center;
+}
+
+.s-item image {
+  width: 25rpx;
+  height: 25rpx;
+  margin-right: 10rpx;
+  vertical-align: text-bottom;
+}
+
+.boss-introduce{
+  margin: 20rpx 20rpx 20rpx 20rpx;
+  padding: 10rpx 10rpx 10rpx 10rpx
+}
+
+.head-img-and-name{
+  align-items: center;
+}
+
+.head-img-and-name .boss-name{
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.head-img-and-name image{
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+}
+
+.boss-sign{
+  margin-top: 30rpx;
+  opacity: 0.8;
+}
+
+.look-boss, .cancel-policy .details, .more{
+  margin-top: 20rpx;
+  color: green;
+}
+
+.should-konw{
+  margin: 20rpx 20rpx 120rpx 20rpx;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  text-align: justify;
+}
+
+.stay-leave-time, .cancel-policy, .base-request, .point-out{
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+  text-align: justify;
+}
+
+.cancel-policy-text, .request-text, .point-out-text{
+  font-size: 28rpx;
+  font-weight: 700;
+  opacity: 0.9;
+  text-align: justify;
+}
+
+.stay-leave-time .time, .policy, .request, .point-out-content{
+  font-size: 30rpx;
+  opacity: 0.7;
+}
+
+.goods-select .description{
+  font-size: 28rpx;
+  opacity: 0.8;
+}
+
+.should-know{
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-bottom: 160rpx;
+  
+}
+
+.should-konw #line1{
+  opacity: 0.8;
+  font-weight: 700;
+}
+
+#line2,#line3,#line4,#line5,#line6{
+  margin-top: 15rpx;
+  font-size: 32rpx;
+  opacity: 0.9;
+  text-align: justify;
+} 
+
+.should-konw text{
+  margin-top: 10rpx;
+  text-align: justify;
+}
+
+

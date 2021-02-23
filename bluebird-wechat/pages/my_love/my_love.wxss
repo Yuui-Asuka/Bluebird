@@ -1,0 +1,59 @@
+/* pages/my_love/my_love.wxss */
+/* pages/my_love/my_love.wxss */
+
+.top{
+  text-align: center;
+  margin-top: 15rpx;
+  font-weight: 700;
+}
+
+.item{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221)
+}
+
+.item image:first-child{
+  border-radius: 5px;
+  width: 240rpx;
+  height: 180rpx;
+}
+
+.item image:last-child{
+  width: 45rpx;
+  height: 45rpx;
+  margin-left: -60rpx;
+  margin-top: 15rpx;
+}
+
+.description{
+  margin-left: 30rpx;
+}
+
+.description .item_name{
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #5E7E7E;
+}
+
+.description .item_style{
+  margin-top: 15rpx;
+}
+
+.description .price{
+  margin-top: 30rpx;
+}
+
+.description .price #price{
+  font-weight: 700;
+}
+
+.description .price #night{
+  margin-left: 15rpx;
+  font-size: 28rpx;
+  opacity: 0.8;
+}
+
+

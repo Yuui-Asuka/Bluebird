@@ -1,0 +1,139 @@
+/* pages/journey/journey.wxss */
+/* pages/journey.wxss */
+
+.journey{
+  text-align: center;
+}
+
+/*外部容器*/
+.listview-container {
+  margin: 10rpx 10rpx;
+}
+
+/*行样式*/
+.playlog-item {
+  display: flex;
+  margin-bottom: 30rpx;
+}
+
+/*时间轴*/
+.playlog-item .dotline {
+  width: 35px;
+  position: relative;
+}
+
+/*竖线*/
+.playlog-item .dotline .line {
+  width: 1px;
+  height: 100%;
+  background: #ccc;
+  position: absolute;
+  top: 50rpx;
+  left: 25rpx; 
+}
+
+/*圆点*/
+.playlog-item .dotline .dot {
+  width: 11px;
+  height: 11px; 
+  background: #30ac63;
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  border-radius: 50%; 
+}
+
+/*时间戳*/
+.playlog-item .dotline .time {
+  width: 100%;
+  position: absolute;
+  margin-top: 30px;
+  z-index: 99;
+  font-size: 12px;
+  color: #777;
+  text-align: center;
+}
+
+/*右侧主体内容*/
+.playlog-item .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 3px 0;
+}
+
+/*章节部分*/
+.playlog-item .content .chapter {
+  font-size: 30rpx;
+  line-height: 68rpx;
+  color: #444;
+  white-space: normal;
+  padding-right: 10px;
+}
+
+/*课程部分*/
+.playlog-item .content .course {
+  font-size: 28rpx;
+  line-height: 56rpx;
+  color: #999;
+}
+
+.img{
+  border: solid 2rpx #5E7E7E;
+  border-radius: 50%;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.img image{
+  border-radius: 50%;
+  width: 45rpx;
+  height: 45rpx;
+  background: white;
+  z-index: 1000;
+}
+
+.date{
+  margin-left: 20rpx;
+  width: 200rpx;
+}
+
+.dates{
+  font-size: 25rpx;
+  opacity: 0.8;
+}
+
+.day{
+  text-align: right;
+  margin-right: 10rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.content{
+  padding-left: 20rpx;
+}
+
+.content .activity-name{
+  font-weight: 700;
+  margin-bottom: 15rpx;
+}
+
+.content .location, .content .date-time{
+  font-size: 27rpx;
+  opacity: 0.8;
+}
+
+.no-journey{
+  margin-top: 80rpx;
+  text-align: center;
+}
+
+.neko{
+  border-radius: 50%;
+}
+
+.no-journey-text{
+  align-items: center;
+  margin-top: 40rpx;
+}

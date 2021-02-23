@@ -1,0 +1,161 @@
+<!--pages/book_details/book_details.wxml-->
+
+<!--顶部栏-->
+<view class="book-details-top">
+  <view class="book-detail-text">预定详情</view>
+  <view class="top">
+    <view class="house-img">
+      <image src="{{houseUrl}}"></image>
+    </view>
+    <view class="title">
+      <view class="city-and-name">{{city}}·{{houseName}}</view>
+      <view class="boss-name">房东: {{bossName}}</view>
+    </view>
+  </view>
+</view>
+
+<!--平台提醒-->
+<view class="platform-remind">
+  <view class="remind-text">猫印提醒</view>
+  <view class="remind-content">根据相关法律规定，所有预定住宿的旅客必须提供以下信息，该信息将仅用于对本人身份的认证。</view>
+</view>
+
+<!--预定详情-->
+<view class="book-info" style="display: flex">
+  <!-- <view class="room-type">
+    <view class="type-text">房型</view>
+    <view class="type-content">{{roomType}}</view>
+  </view> -->
+
+  <view class="stay-time">
+    <view class="time-text">入住时间</view>
+    <view class="time-content">{{startDate}} - {{endDate}}</view>
+  </view>
+
+  <!-- <view class="people-num">
+    <view class="num-text">房客人数</view>
+    <view class="num-content">{{peopleNum}}位</view>
+  </view> -->
+</view>
+
+<!--订单信息-->
+<view class="book-details">
+  <view class="detail-text"></view>
+  <view class="book-content">
+    <view class="book-house" style="display: flex">
+      <view class="block" style="display: flex">
+        <view class="house-img">
+          <image src="../../images/icons/activities/lodging_purple.png"></image>
+        </view>
+        <view class="name-and-time">
+          <view class="name">{{trolley.houseSelect.houseType}}</view>
+          <view class="time">{{trolley.houseSelect.houseTime}}</view>
+        </view>
+      </view>
+      <view class="price-and-night">
+        <view class="house-price">¥ {{trolley.houseSelect.actualFee}}</view>
+        <view class="house-night">{{night}}晚</view>
+      </view>
+    </view>
+    <view class="book-activity">
+      <block wx:for="{{trolley.activityList}}" wx:for-item="item">
+        <view class="item" style="display: flex">
+          <view class="block" style="display: flex">
+            <view class="activity-img">
+              <image src="{{item.picture}}"></image>
+            </view>
+            <view class="name-and-time">
+              <view class="name">{{item.name}}</view>
+              <view class="time">{{item.time}}</view>
+            </view>
+          </view>
+          <view class="price-and-num">
+            <view class="price">¥ {{item.singlePrice * item.num}}</view>
+            <view class="num">x{{item.num}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+
+<!--顾客信息-->
+<view class="guest-info" style="display: flex">
+  <view class="info">
+    <view class="guest-info-text">房客信息</view>
+    <view class="guest-info-content" wx:for="{{guestList}}" wx:for-item="item" wx:for-index="index"  wx:if="{{item.guestName != ''}}">
+      <view class="guest-npi-and-cancel" style="display: flex">
+        <view class="guest-npi">
+          <view class="guest-name">姓名: {{item.guestName}}</view>
+          <view class="guest-ident">身份证: {{item.identification}}</view>
+          <view class="guest-phone">电话: {{item.phone}}</view>
+        </view>
+        <view class="sub-guest" id="{{index}}" bindtap="subGuest">清除</view>
+      </view>
+    </view>
+  </view>
+  <view class="change-text" bindtap="guest">添加</view>
+</view>
+
+<!--留言-->
+<view class="leave-message">
+  <view class="leave-message-text">给房东留言</view>
+  <form class="leave-message-content">
+    <textarea placeholder="请输入留言" bindinput="messageInput"></textarea>
+  </form>
+</view>
+
+<!--须知-->
+<view class="should-know">
+  <view class="book-should-know">
+    <text>预定须知：</text>
+    <text>须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知须知</text>
+  </view>
+  <view class="cancel-policy">
+    <text>取消政策：</text>
+    <text>取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策取消政策</text>
+  </view>
+  <view class="bill">
+    <text>发票：</text>
+    <text>发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票发票</text>
+  </view>
+</view>
+
+<!--总额-->
+<view class="total-fee">
+  <view class="total-fee-text">
+    <text>总额</text>
+    <text class="discount-text" hidden="{{discount==false}}">
+      <text>(</text>
+      <text id="second">已省 ¥ {{discountNum}}</text>
+      <text>)</text>
+    </text>
+  </view>
+  <view class="fee-number">¥ {{price}}</view>
+</view>
+
+<!--底部按钮-->
+<view class="next-step">
+    <button class="next" bindtap="submitOrder" data-statu="open">
+    提交订单
+    </button>
+</view>
+
+
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+<!--content-->
+<!--使用animation属性指定需要执行的动画-->
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+    <view class="cancel-book" bindtap="closeModal" data-statu="close" form-type="submit" id="0">x</view>
+    <view class="drawer_title">猫印</view>
+    <view class="drawer-content-pay">
+      <view class="drawer-price">¥ {{price}}</view>
+      <view class="explain" style="display: flex">
+        <view class="pay-way">支付方式</view>
+        <view class="restMoney">猫印余额</view>
+      </view>
+    </view>
+    <view class="btn_ok" bindtap="closeModal" data-statu="close" form-type="submit" id="1">确认支付</view>
+</view>
+
+

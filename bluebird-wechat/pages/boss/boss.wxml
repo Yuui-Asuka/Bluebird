@@ -1,0 +1,49 @@
+<!--pages/boss/boss.wxml-->
+<!--pages/boss/boss.wxml-->
+<view class="title">
+<view class="boss-image" style="float: right">
+<image src="{{headImg}}" ></image>
+</view>
+<view class="boss-name">
+你好，我叫{{bossName}}
+</view>
+<view class="entry-time">{{entryTime}}加入猫印</view>
+</view>
+
+<view class="boss-introduce">
+<text class="investigate-me">了解我</text>
+<view class="describe">
+<text class="describe-text {{ellipsis?'ellipsis':'unellipsis'}}">
+{{introduce}}
+</text>
+</view>
+<view class="unfold-button" bindtap="ellipsis">{{unfold? '展开':'收起'}}</view>
+</view>
+
+<view class="contact">
+<text class="contact-me">联系我</text>
+<image class="phone" src="../../images/phone.png"></image>
+<image class="message" src="../../images/message.png"></image>
+</view>
+
+<view class="my-house">
+<view class="investigate-myhouse">了解我的民宿</view>
+
+ <scroll-view class="scroll-view_H" scroll-x scroll-with-animation style="width: 100%;height:240px" bindscroll="getSelectItem" scroll-left="{{scrollLeft}}">
+     <block wx:for="{{proList}}"  wx:key="unique" wx:for-index="id" wx:for-item="item">
+        <view class="scroll_item {{item.selected ? 'selected' : ''}}" data-index='{{item.index}}' bindtap='selectProItem'>
+        <view class='proImg' style="position: relative">
+        <image src="{{item.proUrl}}" class="slide-image"  mode="aspectFill"/>
+        <view class="picture_num" style="position:absolute">{{id+1}}/{{proList.length}}</view>
+        </view>
+       </view>
+     </block>
+  </scroll-view>
+
+<view class="house-describe">
+<text class="house-text {{ellipsis2?'ellipsis2':'unellipsis2'}}">
+{{introduce}}
+</text>
+</view>
+<!-- <view class="unfold-button" bindtap="ellipsis2">{{unfold2? '展开':'收起'}}</view> -->
+</view>

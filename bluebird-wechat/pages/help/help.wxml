@@ -1,0 +1,32 @@
+<!--pages/help/help.wxml-->
+<!--pages/help/help.wxml-->
+<view class="wechat" style="display: flex">
+  <text>客服微信 </text>
+  <text class="wechat-number"> Wang_si_yu-</text>
+  <!-- <view class="copy">复制</view> -->
+</view>
+
+<view class="service-phone" style="display: flex">
+  <text>客服电话 </text>
+  <view class="phone-img">
+    <image src="../../images/icons/phone.png"></image>
+  </view>
+  <text class="phone-number">18832231837</text>
+</view>
+
+<view class="questions">
+  <view class="question-text">常见问题</view>
+  <block wx:for="{{questionList}}" wx:for-item="item" wx:for-index="index">
+   <view class="item" style="display: flex">
+    <text class="question {{item.chosen?'active':''}}">{{index + 1}}、 {{item.content}}</text>
+    <view class="fold-img {{item.chosen?'active':''}}">
+      <image src="{{item.chosen?fold:unfold}}" bindtap="touchQ" id="{{index}}"></image>
+    </view>
+   </view>
+   <view class="detail" hidden="{{item.hidden}}">
+    {{item.detail}}
+   </view>
+  </block>
+</view>
+
+

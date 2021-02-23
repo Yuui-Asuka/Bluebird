@@ -1,0 +1,81 @@
+/* pages/charge/charge.wxss */
+/* pages/charge/charge.wxss */
+page{
+  background-color: rgb(255, 255, 255);
+}
+
+.rest-money{
+  text-align: center;
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
+  background: #E46E6F;
+  color: white;
+}
+
+.charge-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  background: #FFE8E8;
+  border-radius: 5px;
+}
+
+.charge-item .charge-text{
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  padding-left: 60rpx;
+  font-weight: 600;
+  width: 230rpx;
+}
+
+.charge-item .present{
+  text-align: center;
+  width: 130rpx;
+  margin-left: -40rpx;
+  padding-left: 10rpx ;
+  padding-right: 10rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 5px;
+  font-size: 25rpx;
+  border: solid 3rpx #5E7E7E;
+  color: #5E7E7E;
+}
+
+.charge-now{
+  padding-right: 30rpx;
+  padding-left: 30rpx;
+  color: white;
+}
+
+.charge-item .charge-now{
+  border-radius: 0 5px 5px 0;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  background: rgb(228, 110, 112, 0.25);
+}
+
+.charge-item .charge-now{
+  border-radius: 0 5px 5px 0;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  background: rgba(228, 110, 112, 0.5);
+}
+
+.charge-item .charge-now{
+  border-radius: 0 5px 5px 0;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  background: rgba(228, 110, 112, 0.75);
+}
+
+.charge-item .charge-now{
+  border-radius: 0 5px 5px 0;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  background: rgba(228, 110, 112);
+}

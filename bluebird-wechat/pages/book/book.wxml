@@ -1,0 +1,96 @@
+<!--pages/book/book.wxml-->
+<!--pages/book/book.wxml-->
+<!--顶部购物车和叉记号-->
+<view class="top" style="display: flex">
+  <view class="cancel">×</view>
+    <view class="trolley">
+      <image class="trolley-image" src="../../images/icons/trolley.png"></image>
+      <view class="item-nums" style="position: absolute">{{itemNum}}</view>
+    </view>
+</view>
+
+<!--顶部标题栏-->
+<view class="title">
+  <view class="room-image" style="float: right">
+    <image class="room-img" src="{{roomUrl}}"></image>
+  </view>
+  <view class="room-name-text">
+    <view class="city-and-name">{{city}} · {{houseName}}</view>
+    <view class="book-text">住宿预定</view>
+  </view>
+</view>
+
+<!--平台提醒-->
+<view class="remind">
+  <view id="remind-title">猫印提醒: </view>
+  <view id="remind-text">{{remind}}</view>
+</view>
+
+<view class="date" style="display: flex">
+  <!--预定日期-->
+  <view class="stay">
+    <view class="stay-date-text">入住日期</view>
+    <view class="stay-date">{{stayMonth}}月{{stayDay}}日</view>
+  </view>
+
+  <view class="all-night">共{{night}}晚</view>
+
+  <!--退房日期-->
+  <view class="leave">
+    <view class="leave-date-text">退房日期</view>
+    <view class="leave-date">{{leaveMonth}}月{{leaveDay}}日</view>
+  </view>
+
+  <!--房客人数-->
+  <view class="people-num">
+    <view class="num-text">房客人数</view>
+    <view class="num">{{peopleNum}}位</view>
+  </view>
+</view>
+
+<view class="house-type">
+  <view class="type-text">房型选择</view>
+  <block class="type-list" bindtap="clickType" wx:for="{{typeList}}" wx:for-item="item" data-idx="{{index}}" wx:key="unique">
+    <view class="type">
+      <view class="type-button {{typeSelect==index? 'active':''}}">{{item.typeButton}}</view>
+      <view class="type-description">
+        <view class="bed">床型: {{item.details.typeBed}}</view>
+        <view class="area">面积: {{item.details.typeAreaLow}}㎡-{{item.details.typeAreaHigh}}㎡</view>
+        <view class="capacity">可住: {{item.details.typeNum}}人</view>
+      </view>
+      <view class="type-price">¥ {{item.typePrice}}</view>
+    </view>
+  </block>
+</view>
+
+<view class="fee-details">
+  <view class="fee-text">费用和税收明细</view>
+  <view class="fee-caculation">
+    <view>¥ {{singlePrice}} X {{night}}晚</view>
+    <view>¥ {{totalFee}}</view>
+  </view>
+  <view class="discount" hidden="{{discount==false}}">
+    <view class="discount-name">{{discountName}} {{discountPercent}} 折</view>
+    <view class="discount-num">-¥{{discountNum}}</view>
+  </view>
+</view>
+
+<view class="total-fee">
+  <view class="total-fee-text">
+    <text>总额</text>
+    <text class="discount-text" hidden="{{discount==false}}">
+      <text>(</text>
+      <text id="second">已省 ¥ {{discountNum}}</text>
+      <text>)</text>
+    </text>
+  </view>
+  <view class="fee-number">¥ {{actualFee}}</view>
+</view>
+
+<view class="next-step">
+    <button class="next">
+    下一步
+    </button>
+</view>
+
+

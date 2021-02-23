@@ -1,0 +1,21 @@
+<!--pages/which_style/which_style.wxml-->
+<!--pages/which_style/which_style.wxml-->
+<view class="top">你喜欢什么风格的民宿?</view>
+<form>
+<view class="styles">
+  <view class="any-style">任何风格</view>
+  <block wx:for="{{styleList}}" wx:for-item="item" wx:for-index="index">
+    <view class="style {{item.flag==true?'active':''}}" id="{{index}}" bindtap="touchItem">
+      <view class="search-city">{{item.name}}</view>
+    </view>
+  </block>
+</view>
+
+<view class="sure">
+  <button bindtap="sure">确定</button>
+</view>
+
+</form>
+
+
+

@@ -1,0 +1,82 @@
+<!--pages/mine/mine.wxml-->
+<!--pages/mine/mine.wxml-->
+<view class="top">
+  <view class="user-head-img" style="float: right" bindtap="loginWx">
+    <image src="{{headImg}}"></image>
+  </view>
+  <view class="name-and-menber" style="display: flex">
+    <view class="user-name">{{userName}}</view>
+    <view class="member {{memberType=='大会员'?'active' : ''}}">{{memberType}}</view>
+  </view>
+  <view class="remind">找个周末，预定一家民宿，好好放松一下吧</view>
+</view>
+
+<view class="card">
+  <view class="first-line" style="display: flex">
+    <view class="fund-text">我的旅行基金</view>
+    <view class="can-see" bindtap="hideInfo">
+      <image src="{{eyeUrl}}"></image>
+    </view>
+    <view class="charge-text" bindtap="charge">我要优惠充值 >>></view>
+  </view>
+
+  <view class="second-line" style="display: flex">
+    <view class="rest-money">
+      <view class="money-num" wx:if="{{hide==false}}">¥ {{money}}</view>
+      <view class="money-num" wx:if="{{hide==true}}">****</view>
+      <view class="money-text">余额</view>
+    </view>
+
+    <view class="points">
+      <view class="points-num" wx:if="{{hide==false}}">{{points}}</view>
+      <view class="points-num" wx:if="{{hide==true}}">****</view>
+      <view class="points-text">积分</view>
+    </view>
+
+    <view class="certificate" bindtap="myCertification">
+      <view class="certificate-num" wx:if="{{hide==false}}">{{certificate}}</view>
+      <view class="certificate-num" wx:if="{{hide==true}}">****</view>
+      <view class="certificate-text">卡券</view>
+    </view>
+  </view>
+</view>
+
+<view class="block" style="position: relative">
+<view class="back-color" style="position: absolute"></view>
+<view class="back">
+  <view class="my-order" style="display: flex" bindtap="myOrder">
+    <image src="../../images/icons/mine/order.png"></image>
+    <text id="d1">我的订单</text>
+    <text id="d2">></text>
+  </view>
+
+  <view class="my-love" bindtap="myLove">
+    <image src="../../images/icons/mine/like.png"></image>
+    <text id="x1">我的喜欢</text>
+    <text id="x2">></text>
+  </view>
+
+  <view class="service" bindtap="help">
+    <image src="../../images/icons/mine/service.png"></image>
+    <text id="k1">客服帮助</text>
+    <text id="k2">></text>
+  </view>
+
+  <view class="advise">
+    <image src="../../images/icons/mine/back.png"></image>
+    <text id="f1">意见反馈</text>
+    <text id="f2">></text>
+  </view>
+
+  <view class="about-us">
+    <image src="../../images/icons/mine/cat.png"></image>
+    <text id="p1">关于平台</text>
+    <text id="p2">></text>
+  </view>
+</view>
+</view>
+
+
+
+
+

@@ -1,0 +1,154 @@
+/* pages/wait_pay/wait_pay.wxss */
+/* pages/wait_pay/wait_pay.wxss */
+page{
+  background: rgb(248, 212, 218);
+}
+
+.wait-pay, .order, .all-money, .guest-message, .order-code, .cancel-order{
+  margin: 20rpx 20rpx 20rpx 20rpx;
+  padding: 20rpx 30rpx 20rpx 30rpx;
+  background: white;
+  border-radius: 5px;
+}
+
+.wait-pay{
+  text-align: center;
+}
+
+.wait-pay .wait-pay-text{
+  font-weight: 600;
+}
+
+.wait-pay .wait-pay-remind{
+  font-size: 25rpx;
+  opacity: 0.8;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title{
+  padding-top: 10rpx;
+  padding-left: 50rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.title .house-name{
+  color: #5E7E7E;
+  font-size: 30rpx;
+  font-weight: 600;
+  margin-bottom: 15rpx;
+}
+
+.title .wait-pay{
+  color: #f5a97d;
+  font-size: 31rpx;
+  margin-left: 100rpx;
+}
+
+.item-img image{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.item{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  padding-bottom: 20rpx;
+  justify-content: space-between;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.name-and-time{
+  margin-left: 20rpx;
+}
+
+.name-and-time .name-text{
+  font-size: 35rpx;
+  font-weight: 600;
+}
+
+.name-and-time .time-text{
+  font-size: 25rpx;
+  opacity: 0.8;
+}
+
+.price-and-num{
+  margin-right: 0rpx;
+  margin-left: 8%;
+  margin-top: -20rpx;
+  position: relative;
+}
+
+.price-and-num .price{
+  color: #5E7E7E;
+  text-align: right;
+}
+
+.price-and-num .num{
+  float: right;
+  font-size: 30rpx;
+  opacity: 0.8;
+}
+
+.price-and-num .cancel{
+  width: 120rpx;
+  border: solid 2rpx rgb(150, 150, 150);
+  font-size: 25rpx;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  margin-top: 50rpx;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.all-money{
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.guest-message{
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+}
+
+.guest{
+  margin-top: 40rpx;
+  font-size: 27rpx;
+  opacity: 0.8
+}
+
+.order-code{
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+  word-break:break-all;
+}
+
+.cancel-order{
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+}
+
+.cancel-policy{
+  word-break:break-all;
+}
+
+button{
+  height: 60rpx;
+  font-size: 30rpx;
+  color: white;
+  background: #5E7E7E;
+  line-height: 60rpx;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 25px;
+}

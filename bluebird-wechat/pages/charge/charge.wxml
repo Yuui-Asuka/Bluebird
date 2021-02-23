@@ -1,0 +1,35 @@
+<!--pages/charge/charge.wxml-->
+<!--pages/charge/charge.wxml-->
+<view class="rest-money">
+  <view class="rest-num">{{rest}}</view>
+  <view class="rest-text">当前剩余</view>
+</view>
+
+<block wx:for="{{chargeList}}" wx:for-item="item" wx:for-index="index">
+
+<!-- <view class="charge-500" style="display: flex">
+  <view class="charge-text">充值 {{item.chargeMoney}}</view>
+  <view class="present">赠送 {{item.actualMoney - item.chargeMoney}}</view>
+  <view class="charge-now" id="{{item.chargeMoney}}" bindtap="chargeNow">立即充值</view>
+</view>
+
+<view class="charge-800">
+  <view class="charge-text">充值 {{item.chargeMoney}}</view>
+  <view class="present">赠送 {{item.actualMoney - item.chargeMoney}}</view>
+  <view class="charge-now" id="{{item.chargeMoney}}" bindtap="chargeNow">立即充值</view>
+</view>
+
+<view class="charge-1500">
+  <view class="charge-text">充值 {{item.chargeMoney}}</view>
+  <view class="present">赠送 {{item.actualMoney - item.chargeMoney}}</view>
+  <view class="charge-now" id="{{item.chargeMoney}}" bindtap="chargeNow">立即充值</view>
+</view> -->
+
+<view class="charge-item">
+  <view class="charge-text">充值 {{item.chargeMoney}}</view>
+  <view class="present">赠送 {{(item.actualMoney - item.chargeMoney)}}</view>
+  <view class="charge-now" id="{{item.chargeMoney}}" bindtap="chargeNow">立即充值</view>
+</view>
+
+</block>
+

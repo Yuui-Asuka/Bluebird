@@ -1,0 +1,68 @@
+<!--pages/calendar/calendar.wxml-->
+<!--pages/calendar/calendar.wxml-->
+<view class="calendar">
+  <view class="date-box">
+    <view class="date-box-hd-view" style="z-index: 1000">
+
+      <!--顶部固定栏-->
+      <view class="top-info">
+      <!--顶部清除返回-->
+        <view class="clear">
+          <view class="clear-text" bindtap="clearDay">清除</view>
+        </view>
+
+      <!--开始日期和结束日期-->
+        <view class="start-and-end">
+          <view class="start-date">
+            <view class="day">{{startDay}}</view>
+            <view class="date">{{startMonth}}月{{startDate}}日</view>
+          </view>
+          <view class="night">共{{night}}晚</view>
+          <view class="end-date">
+            <view class="day">{{endDay}}</view>
+            <view class="date">{{endMonth}}月{{endDate}}日</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="date-box-hd gap-line">
+        <text class="day">日</text>
+        <text class="day">一</text>
+        <text class="day">二</text>
+        <text class="day">三</text>
+        <text class="day">四</text>
+        <text class="day">五</text>
+        <text class="day">六</text>
+      </view>
+    </view>
+
+    <view class="date-box-con">
+      <view class="month" wx:for="{{ calendars }}" wx:key="{{ index }}">
+        <view class="month-hd">
+          <text class="month-text">{{ item.month }}月</text>
+          <text class="year-text">{{ item.year }}</text>
+        </view>
+        <view class="days">
+          <text wx:for="{{ item.placeholders }}" wx:key="{{ item }}"></text>
+          <text
+          wx:for="{{ item.days }}"
+          wx:key="{{ index }}"
+          wx:for-item="day"
+          data-timestamp="{{ day.timestamp }}"
+          data-disabled="{{ (day.text < curDay) && (item.month == curMonth + 1) }}"
+          bindtap="_chooseDay"
+          class="{{ (day.text < curDay) && (item.month == curMonth + 1) ? 'disable' : '' }} {{ (day.timestamp >= timeArr[0] && day.timestamp <= timeArr[1]) || (!timeArr[1] && timeArr[0] == day.timestamp) ? 'active' : '' }} {{ (day.text == curDay) && (item.month == curMonth + 1) ? 'today' : '' }}">{{ day.text }}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="next-step">
+    <button class="next" bindtap="bookDetail">
+    保存
+    </button>
+</view>
+
+
+

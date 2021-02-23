@@ -1,0 +1,4 @@
+<!--pages/map/map.wxml-->
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" enable-traffic show-compass scale="14" bindcontroltap="controltap" bindmarkertap="markertap" bindregionchange="regionchange" show-location  style="width: 100%; height: {{screenHeight}}px;" scale="17" markers="{{marker}}"></map>
+
+

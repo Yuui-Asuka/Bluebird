@@ -1,0 +1,43 @@
+/* pages/where/where.wxss */
+/* pages/where/where.wxss */
+
+.past-search{
+  height: 250rpx;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  padding-bottom: 20rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.past-search .past-search-text, .hot-city .hot-city-text{
+  font-weight: 700;
+  opacity: 0.7;
+  margin-bottom: 30rpx;
+}
+
+.hot-city{
+  height: 800rpx;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  padding-bottom: 20rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.block{
+  flex-flow:row wrap;
+}
+
+.item{
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 25rpx;
+  width: 100rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 1rpx rgb(221, 221, 221);
+}

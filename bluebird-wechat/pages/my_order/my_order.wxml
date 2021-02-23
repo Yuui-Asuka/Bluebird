@@ -1,0 +1,96 @@
+<!--pages/my_order/my_order.wxml-->
+<!--pages/my_order/my_order.wxml-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="items {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+ 
+<!--首页-->
+<view class="ing" hidden="{{currentTab!==0}}" wx:if="{{orderState != 100}}">
+    <view class="order" >
+      <view class="title" style="display: flex">
+        <view class="house-name">{{city}} · {{houseName}}</view>
+        <view class="wait-pay">待支付, {{failTime}}后失效</view>
+      </view>
+      <view class="order-items" bindtap="waitPay" wx:for="{{waitPay}}" wx:for-item="item">
+        <view class="item" style="display: flex">
+          <view class="img-time-name" style="display: flex">
+            <view class="item-img">
+              <image src="{{item.img}}"></image>
+            </view>
+            <view class="name-and-time">
+              <view class="name-text">{{item.name}}</view>
+              <view class="time-text">{{item.time}}</view>
+            </view>
+          </view>  
+          <view class="price-and-num">
+            <view class="price">¥ {{item.price}}</view>
+            <view class="num">x {{item.num}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="bottom" style="display: flex">
+        <view class="total-fee">总额: ¥ {{totalFee}}</view>
+        <view class="pay" bindtap="payNow">立即支付</view>
+        <view class="cancel-order" bindtap="cancelOrder2">取消订单</view>
+      </view>
+    </view>
+</view>
+
+<view class="completed" hidden="{{currentTab!=1}}">
+  <block wx:for="{{orderLists}}" wx:for-item="orderItem" wx:for-index="index">
+    <view class="order" id="{{index}}">
+      <view class="title" style="display: flex">
+        <view class="house-name">{{orderItem.city}} · {{orderItem.houseName}}</view>
+        <view class="pay-complete">进行中</view>
+      </view>
+      <view class="order-items" bindtap="orderDetail" id="{{index}}">
+        <view class="item" style="display:flex">
+          <view class="item-name-time" style="display:flex">
+            <view class="item-img">
+              <image src="{{orderItem.orderList[0].img}}"></image>
+            </view>
+            <view class="name-and-time">
+              <view class="name-text">{{orderItem.orderList[0].name}}</view>
+              <view class="time-text">{{orderItem.orderList[0].time}}</view>
+              <view class="combo">内含{{orderItem.orderList.length}}个套餐</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="bottom" style="display: flex">
+        <view class="total-fee">总额: ¥ {{orderItem.totalFee}}</view>
+        <view class="cancel-button" bindtap="cancelOrder" id="{{index}}" wx:if="{{orderItem.cancelButton=='取消订单'}}">{{orderItem.cancelButton}}</view>
+        <view class="cancel-button" bindtap="cancelOrder" id="{{index}}" wx:if="{{orderItem.cancelButton=='审核中'}}">{{orderItem.cancelButton}}</view>
+      </view>
+    </view>
+  </block>
+</view>
+
+
+<view class="completed" hidden="{{currentTab!=2}}">
+  <block wx:for="{{orderLists}}" wx:for-item="orderItem" wx:for-index="index">
+    <view class="order" id="{{index}}">
+      <view class="title" style="display: flex">
+        <view class="house-name">{{orderItem.city}} · {{orderItem.houseName}}</view>
+        <view class="pay-complete">已完成</view>
+      </view>
+      <view class="order-items" bindtap="orderDetail2" id="{{index}}">
+        <view class="item" style="display:flex">
+          <view class="item-name-time" style="display:flex">
+            <view class="item-img">
+              <image src="{{orderItem.orderList[0].img}}"></image>
+            </view>
+            <view class="name-and-time">
+              <view class="name-text">{{orderItem.orderList[0].name}}</view>
+              <view class="time-text">{{orderItem.orderList[0].time}}</view>
+              <view class="combo">内含{{orderItem.orderList.length}}个套餐</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="bottom" style="display: flex">
+        <view class="total-fee">总额: ¥ {{orderItem.totalFee}}</view>
+      </view>
+    </view>
+  </block>
+</view>

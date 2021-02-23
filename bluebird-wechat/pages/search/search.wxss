@@ -1,0 +1,85 @@
+/* pages/search/search.wxss */
+/* pages/search/search.wxss */
+.search {
+  width: 100%;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+  padding-bottom: 15rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.search .search-box{
+  width: 100%;
+  margin-left: 30rpx;
+}
+
+.search image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.block{
+  position: relative;
+}
+
+.search-condition{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.time{
+  padding-top: 50rpx;
+}
+
+.destination, .style, .doing{
+  margin-top: 50rpx;
+  margin-bottom: 30rpx;
+}
+
+.time-text, .go-text, .style-text, .doing-text{
+  font-size: 30rpx;
+  font-weight: 700;
+  margin-bottom: 25rpx;
+  color: white;
+}
+
+.time-choose, .city, .any-style, .anything{
+  color:rgb(201, 233, 233);
+  font-size: 55rpx;
+  font-weight: 800;
+  border-bottom: solid 1rpx rgb(216, 216, 216);
+  width: fit-content;
+}
+
+.search-button{
+  width: 90%;
+  position: fixed;
+  bottom: 50rpx;
+  margin-left: 5%;
+}
+
+.search-button button{
+  background: #5E7E7E;
+  color: white;
+}
+
+.background .back{
+  float: right;
+  z-index: -1;
+  width: 900rpx;
+  height: 1400rpx;
+  position: absolute;
+  margin-top: 0rpx;
+  margin-left: 0rpx;
+  clip: rect(0px 450px 700px 0px);
+}
+
+.logo{
+  width: 180rpx;
+  height: 180rpx;
+  float: right;
+  margin-top: 30rpx;
+  margin-right: 30rpx;
+}
+

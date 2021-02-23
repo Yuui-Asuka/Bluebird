@@ -1,0 +1,185 @@
+/* pages/boss/boss.wxss */
+/* pages/boss/boss.wxss */
+
+
+.boss-image image{
+  width: 130rpx;
+  height: 130rpx;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+  border-radius: 50%;
+}
+.boss-name{
+  margin-left: 30rpx;
+  margin-top: 50rpx;
+  margin-bottom: 20rpx;
+  padding-top: 20rpx;
+  font-size: 45rpx;
+  font-weight: bolder;
+}
+
+.entry-time{
+  margin-left: 30rpx;
+  font-size: 25rpx;
+}
+.boss-introduce{
+  margin-top: 80rpx;
+}
+
+.boss-introduce .investigate-me{
+  margin-left: 30rpx;
+  font-size: 35rpx;
+  font-weight: 700;
+}
+
+.describe-text{
+  margin-top: -20rpx;
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+  font-size: 25rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow:hidden; 
+}
+
+.ellipsis{
+  -webkit-line-clamp:3; 
+  opacity: 0.75 
+}
+.unellipsis{
+  -webkit-line-clamp:0; 
+  opacity: 1 
+}
+
+
+.boss-introduce .unfold-button{
+  margin-left: 90%;
+  margin-top: 5rpx;
+  font-size: 25rpx;
+  color: rgb(64, 93, 224);
+}
+
+.contact{
+margin-left: 30rpx;
+height: 100rpx;
+line-height: 100rpx;
+}
+
+.contact-me{
+  font-size: 35rpx;
+  font-size: 35rpx;
+  font-weight: 700;
+}
+
+.phone{
+  vertical-align: text-top;
+  margin-left: 50rpx;
+  height: 90rpx;
+  width: 90rpx;
+}
+
+.message{
+  vertical-align: text-top;
+  margin-left: 40rpx;
+  height: 90rpx;
+  width: 90rpx;
+}
+
+.investigate-myhouse{
+  margin-left: 30rpx;
+  margin-top: 60rpx;
+  font-size: 35rpx;
+  font-weight: 700;
+}
+
+.scroll-view_H{
+  margin-top: 30rpx;
+  background: white;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.picture_num{
+margin-top: 360rpx;
+margin-left: 350rpx;
+color: #ffffff;
+font-size: 22rpx;
+}
+
+
+.scroll_item {
+position: relative;
+width: 55%;
+margin: 0 1%;
+left: -2%;
+display: inline-block;
+border-radius: 20rpx !important ;
+overflow: hidden;
+transform: scale(0.9);
+box-shadow: 0 0 10px #ccc;
+vertical-align: middle;
+top: 5%;
+bottom: 10%;
+height: 80%;
+background-color: #fff;
+}
+.scroll_item:first-child{
+  margin-left: 8%;
+  left: 0;
+}
+.scroll_item:last-child{
+  margin-right: 8%;
+   left: 0;
+}
+.scroll_item.selected{
+   border: solid 1px #ffcd54;
+   transform: scaleX(1);
+   transform: scaleY(1.1);
+   margin-left: 4%;
+   margin-right: 3%;
+}
+.scroll_item .proImg{
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  width: 100%;
+  max-height: 200rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.scroll_item image {
+  width: 100%;
+  float: left;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+
+.my-house .unfold-button{
+  margin-left: 90%;
+  margin-top: 5rpx;
+  font-size: 25rpx;
+  color: rgb(64, 93, 224);
+}
+
+.house-text{
+  margin-top: -20rpx;
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+  font-size: 25rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow:hidden; 
+}
+
+.ellipsis2{
+  -webkit-line-clamp:3; 
+  opacity: 0.75 
+}
+.unellipsis2{
+  -webkit-line-clamp:0; 
+  opacity: 1 
+}

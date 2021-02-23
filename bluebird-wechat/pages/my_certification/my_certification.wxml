@@ -1,0 +1,46 @@
+<!--pages/my_certification/my_certification.wxml-->
+<!--pages/my_certification/my_certification.wxml-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="items {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+
+<view class="activity" hidden="{{currentTab!==0}}">
+  <block wx:for="{{houseList}}" wx:for-item="item" wx:for-index="index">
+    <view class="item">
+      <view class="house-name">{{item.city}}·{{item.houseName}}</view>
+      <block wx:for="{{item.activityList}}" wx:for-item="aitem">
+        <view class="aitem" style="display: flex">
+          <view class="activity-img">
+            <image src="../../images/icons/activities/activity_purple.png"></image>
+          </view>
+          <view class="name-and-time">
+            <view class="name">{{aitem.activityName}}券</view>
+            <view class="time">有效期: {{aitem.activityTime}}</view>
+          </view>
+          <view class="use-now">去使用</view>
+        </view>
+      </block>
+    </view>
+</block>
+</view>
+
+<view class="food" hidden="{{currentTab!==1}}">
+  <block wx:for="{{houseList}}" wx:for-item="item" wx:for-index="index">
+    <view class="item">
+      <view class="house-name">{{item.city}}·{{item.houseName}}</view>
+      <block wx:for="{{item.foodList}}" wx:for-item="aitem">
+        <view class="aitem" style="display: flex">
+          <view class="activity-img">
+            <image src="../../images/icons/activities/food_purple.png"></image>
+          </view>
+          <view class="name-and-time">
+            <view class="name">{{aitem.foodName}}券</view>
+            <view class="time">有效期: {{aitem.foodTime}}</view>
+          </view>
+          <view class="use-now">去使用</view>
+        </view>
+      </block>
+    </view>
+</block>
+</view>
+

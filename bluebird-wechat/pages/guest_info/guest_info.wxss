@@ -1,0 +1,95 @@
+/* pages/guest_info/guest_info.wxss */
+/* pages/guest_info/guest_info.wxss */
+
+.guest-text{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.guest-text .guest-info-text{
+  font-size: 38rpx;
+  font-weight: 700;
+}
+
+.guest-text .guest-info-content{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  font-size: 28rpx;
+  opacity: 0.8;
+  letter-spacing: 1rpx;
+}
+
+.guest-info{
+  margin-top: 70rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.guest-info switch{
+  float: right;
+}
+
+.guest-identification{
+  font-size: 32rpx;
+  margin-top: 15rpx;
+  opacity: 0.8;
+}
+
+.add{
+  margin-top: 40rpx;
+  margin-bottom: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+}
+
+.add-guest{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.add-icon image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.add-guest .remind{
+  margin-bottom: 30rpx;
+  font-size: 28rpx;
+  letter-spacing: 1rpx;
+  opacity: 0.8;
+}
+
+.page_hd{
+  position: fixed;
+  padding-top: 20rpx;
+  bottom: 0;
+  width: 100%;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  border-top: solid 2rpx rgb(221, 221, 221)
+}
+
+.page_hd .block{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.save{
+  margin-bottom: 15rpx;
+  width: 120rpx;
+  height: 60rpx;
+  background: #5E7E7E;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 60rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}

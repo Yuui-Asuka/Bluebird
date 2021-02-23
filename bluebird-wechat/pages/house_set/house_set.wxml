@@ -1,0 +1,159 @@
+<!--pages/house_set/house_set.wxml-->
+<!--pages/house_set/house_set.wxml-->
+<!-- <view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view> -->
+<view class="page-top">
+   <view class="search-box-and-button" style="display: flex">
+      <view class="search-box" style="display: flex">
+         <view class="search-input">
+            <input placeholder="{{placeholder}}"></input>
+         </view>
+         <view class="search-time" bindtap="calendar">
+            <view class="live-in-time">{{startMonth}}/{{startDate}}入住</view>
+            <view class="live-out-time">{{endMonth}}/{{endDate}}离开</view>
+         </view>
+      </view>
+      <view class="search-button" bindtap="houseDetails">
+         <image src="../../images/icons/bottom_tab/search_grey.png"></image>
+      </view>
+   </view>
+
+   <view class="search-condition" style="display: flex">
+
+      <view class="city" bindtap="setCity" data-statu="open" style="display: flex">
+         <view class="city-text">{{cityTag}}</view>
+         <view class="triangle"></view>
+      </view>
+
+      <view class="destination" bindtap="setDestination" data-statu="open" style="display: flex">
+         <view class="destination-text">{{destinationTag}}</view>
+         <view class="triangle"></view>
+      </view>
+
+      <view class="comprehensive-sequencing" bindtap="setSequence" data-statu="open" style="display: flex">
+         <view class="comprehensive-sequencing-text">{{sequenceTag}}</view>
+         <view class="triangle"></view>
+      </view>
+   </view>
+
+   <!-- <view class="push-choose" style="display: flex">
+      <view class='select_box'>
+         <view class='select' catchtap='selectTap'>
+            <text class='select_text'>{{selectData[index]}}</text>
+            <image class='select_img {{selectShow&&"select_img_rotate"}}' src='../../images/icons/unfold.png'  background-size="contain"></image> 
+         </view>
+         <view class='option_box' style='height:{{selectShow?(selectData.length>5?325:selectData.length*50):0}}rpx;'>
+            <text class='option' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+         </view>
+      </view>
+   </view> -->
+</view>
+
+
+<!-- <view class="house" hidden="{{currentTab!==0}}"> -->
+<!--民宿集列表-->
+<view class="houseList">
+<block wx:for="{{houseList}}" wx:for-item="item" wx:for-index="index">
+   <view class="house-item" style="position: relative" id="{{index}}" bindtap="houseDetails">
+      <!--房间图片-->
+      <view class="item-img" style="position: relative">
+         <image class="house-img" src="{{item.img}}" mode="aspectFill"></image>
+         <!--收藏图标-->
+         <!-- <image class="save" src="{{item.save}}" id="{{index}}" style="position: absolute" bindtap="like"></image> -->
+      </view>
+      <!--房东头像-->
+      <view class="head-img" style="position: absolute">
+        <image src="{{item.headImg}}"></image>
+      </view>
+      <!--城市和民宿名称-->
+      <view class="city-and-house-name">{{item.city}}·{{item.houseName}}</view>
+      <!--民宿风格-->
+      <view class="bottom-part" id="{{index}}">
+         <view class="house-style">{{item.style}}</view>
+      <!--标签-->
+         <view class="house-tags">
+            <view class="tag1">{{item.tag1}}</view>
+            <view class="tag2">{{item.tag2}}</view>
+            <view class="tag3">{{item.tag3}}</view>
+         </view>
+      <!--价格-->
+         <view class="house-price">
+            <text id="price">¥{{item.price}}</text>
+            <text id="one-night">/晚</text>
+         </view>
+      </view>
+   </view>
+</block>
+</view>
+
+<!-- </view> -->
+
+<!-- <view class="activity" hidden="{{currentTab!==1}}">
+tab2
+</view>
+
+<view class="community" hidden="{{currentTab!==2}}">
+tab3
+</view> -->
+
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+<!--content-->
+<!--使用animation属性指定需要执行的动画-->
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+  <!--drawer content-->
+   <view class="city-box" wx:if="{{button==0}}">
+      <view class="drawer_title">选择城市</view>
+      <view class="drawer-content-city">
+         <view class="hot-city">
+            <view class="hot-city-text">热门城市</view>
+            <view class="block" style="display: flex">
+               <block wx:for="{{cityList}}" wx:for-item="item" wx:for-index="index" style="display: flex">
+                  <view class="item {{item.select==cityIndex?'active':''}}"  bindtap="cityChoose" id="{{index}}">
+                     <view class="search-city">{{item.name}}</view>
+                  </view>
+               </block>
+            </view>
+         </view>
+      </view>
+      <button class="btn_ok" bindtap="setCity" data-statu="close" form-type="submit">确定</button>
+   </view>
+
+
+   <view class="destination-box" wx:if="{{button==1}}">
+      <view class="drawer_title">目的</view>
+      <view class="drawer-content-destination">
+         <checkbox-group bindchange="checkboxChange" name="destination">
+         <label class="weui-cell weui-check__label" wx:for="{{destinationItems}}" wx:key="{{destinationItems.value}}" style="display: flex" wx:for-item="item">
+            <view class="weui-cell__bd">{{item.name}}</view>
+            <view class="weui-cell__hd">
+              <checkbox value="{{item.value}}" checked="{{item.checked}}"/>
+            </view>
+          </label>
+         </checkbox-group>
+         <view class="todo-input">
+            <input placeholder="自定义输入......"></input>
+         </view>
+      </view>
+      <button class="btn_ok" bindtap="setDestination" data-statu="close" form-type="submit">确定</button>
+   </view>
+
+
+   <view class="sequence-box" wx:if="{{button==2}}">
+      <view class="drawer_title">综合排序</view>
+      <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class="drawer-content-sequence">
+            <radio-group bindchange="radioChange" name="sequence">
+               <label class="weui-cell weui-check__label" wx:for="{{sequenceItems}}" wx:key="{{sequenceItems.value}}" wx:for-item="item" style="display: flex">
+                  <view class="weui-cell__bd">{{item.name}}</view>
+                  <view class="weui-cell__hd">
+                     <radio value="{{item.name}}" checked="true"/>
+                  </view>
+               </label>
+            </radio-group>
+      </view>
+      <button class="btn_ok" bindtap="setSequence" data-statu="close" form-type="submit">确定</button>
+      </form>
+   </view>
+</view>
+

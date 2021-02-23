@@ -1,0 +1,514 @@
+<!--pages/house_detail/house_detail.wxml-->
+<!--pages/house_detail/house_detail.wxml-->
+<view class="top" style="position: relative">
+  <!--滑动图-->
+  <!-- <scroll-view class="scroll-view_H" scroll-x style="width: 100%;height:500px" scroll-left="{{scrollLeft}}" scroll-with-animation bindtouchstart="touchstart"
+bindscroll="getScrollLeft" style="position: absolute">
+     <block wx:for="{{proList}}"  wx:key="unique" wx:for-index="id" wx:for-item="item">
+        <view class="scroll_item {{item.selected ? 'selected' : ''}}" data-index='{{item.index}}' bindtap='selectProItem'>
+            <image src="{{item.proUrl}}" class="slide-image"  mode="aspectFill"/>
+       </view>
+     </block>
+  </scroll-view> -->
+
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="true"
+        interval="5000" circular="true">
+   <block wx:for="{{proList}}" wx:key="unique" wx:for-index="id" wx:for-item="item">
+      <swiper-item>
+        <view class='proImg'>
+          <image src="{{item.proUrl}}" class="slide-image"  mode="aspectFill"/>
+          </view>
+      </swiper-item>
+   </block>
+</swiper>
+
+
+  <!--商家头像的图标-->
+  <view class="head-img" style="position: absolute" bindtap="bossDetail">
+    <image src="{{headImg}}"></image>
+  </view>
+
+  <!--喜欢的图标-->
+  <view class="like" style="position: absolute" bindtap="like">
+    <image src="{{likeUrl}}"></image>
+  </view>
+
+  <!--分享的图标-->
+  <view class="share" style="position: absolute" bindtap="share">
+    <image src="../../images/icons/share.png"></image>
+  </view>
+</view>
+
+<view class="house-introduce">
+
+  <view class="city-and-name">{{city}}·{{houseName}}</view>
+  <view class="style">{{style}}</view>
+  <view class="house-tags" style="display: flex">
+    <view class="tag1">{{tag1}}</view>
+    <view class="tag2">{{tag2}}</view>
+    <view class="tag3">{{tag3}}</view>
+  </view>
+  <view class="address">
+    <text id="address">{{address}}</text>
+    <text id="map" style="float: right" bindtap="accessMap">地图/周边 ></text>
+  </view>
+  <view class="introduce-details">{{introduceDetails}}</view>
+</view>
+
+<view class="navbar {{fix==true? 'topnav' : ''}}" id="navbar">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+
+<!--预定Tab-->
+<view class="book-tab" hidden="{{currentTab!==0}}" style="overflow: hidden">
+  <view class="navbar1 " style="float: left">
+    <text wx:for="{{navbar1}}" data-idx="{{index}}" class="item {{currentTab1==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap1">{{item}}</text>
+  </view>
+
+  <!--房间的二级tab-->
+  <view class="house-tab" hidden="{{currentTab1!=0}}">
+    <view class="house-block">
+
+      <view class="house-top">
+        <image src="../../images/icons/activities/lodging_purple.png"></image>
+        <text class="house-stay-text">民宿住宿</text>
+      </view>
+    <!--平台提醒-->
+      <view class="remind">
+        <view id="remind-title">猫印提醒: </view>
+        <view id="remind-text">{{remind}}</view>
+      </view>
+
+      <view class="date" style="display: flex">
+  <!--预定日期-->
+        <view class="date-block" style="display: flex"  bindtap="dateSelect">
+          <view class="stay">
+            <view class="stay-date-text">入住日期</view>
+            <view class="stay-date">{{stayMonth}}月{{stayDay}}日</view>
+          </view>
+
+          <view class="all-night">共{{night}}晚</view>
+
+  <!--退房日期-->
+          <view class="leave">
+            <view class="leave-date-text">退房日期</view>
+            <view class="leave-date">{{leaveMonth}}月{{leaveDay}}日</view>
+          </view>
+        </view>
+ 
+
+  <!--房客人数-->
+
+        <!-- <view class="people-num">
+          <view class="num-text">房客人数</view>
+          
+          <view class="people-add-sub" style="display: flex">
+            <view class="subtract" bindtap="subPeople">
+              <image src="../../images/icons/subtract.png"></image>
+            </view>
+            <view class="select-num">{{peopleNum}}</view>
+            <view class="add" bindtap="addPeople">
+              <image src="../../images/icons/plus.png"></image>
+            </view>
+          </view>
+        </view> -->
+
+      </view>
+
+      <view class="house-type">
+        <view class="type-text">房型选择</view>
+        <block class="type-list" bindtap="clickType" wx:for-index="index" wx:for="{{typeList}}" wx:for-item="item" data-idx="{{index}}" wx:key="unique">
+          <view class="type">
+            <view class="type-button {{currentTypeSelect==index? 'active':''}}" bindtap="typeChange" id="{{index}}">{{item.typeButton}}</view>
+            <view class="type-description">
+              <view class="bed">床型: {{item.details.typeBed}}</view>
+              <view class="area">面积: {{item.details.typeAreaLow}}㎡-{{item.details.typeAreaHigh}}㎡</view>
+              <view class="capacity">可住: {{item.details.typeNum}}人</view>
+            </view>
+            <view class="type-price">¥ {{item.typePrice}}</view>
+          </view>
+        </block>
+      </view>
+
+      <view class="fee-details">
+        <view class="fee-text">费用和税收明细</view>
+        <view class="fee-caculation">
+          <view>{{singlePrice}} X {{night}}晚</view>
+          <view>¥ {{totalFee}}</view>
+        </view>
+        <view class="discount" hidden="{{discount==false}}">
+          <view class="discount-name">{{discountName}} {{discountPercent}} 折</view>
+          <view class="discount-num">-¥{{discountNum}}</view>
+        </view>
+      </view>
+
+      <view class="total-fee">
+        <view class="total-fee-text">
+          <text>总额</text>
+          <text class="discount-text" hidden="{{discount==false}}">
+            <text>(</text>
+            <text id="second">已省 ¥ {{discountNum}}</text>
+            <text>)</text>
+          </text>
+        </view>
+        <view class="fee-number">¥ {{totalFee}}</view>
+      </view>
+
+    </view>
+  </view>
+
+
+<!--活动的二级Tab-->
+  <view class="activity-tab" hidden="{{currentTab1!=1}}" style="overflow: hidden">
+    <view class="activity-select">活动选择</view>
+
+    <view class="activity-block">
+      <block wx:for="{{houseActivityList}}" wx:for-item="item" wx:for-index="index">
+        <view class="item">
+          <view class="outer-block" style="display: flex">
+            <view class="activity-img">
+              <image src="{{item.activityImg}}"></image>
+            </view>
+            <view class="name-and-description">
+              <view class="name">{{item.activityName}}</view>
+              <view class="description">{{item.description}}</view>
+            </view>
+            <view class="price">¥ {{item.price}}</view>
+            <view class="unfold" id="{{index}}" bindtap="activityUnfold">
+              <image src="{{item.unfoldUrl}}"></image>
+            </view>
+          </view>
+          <!--内层-->
+          <view wx:for="{{item.timeList}}" wx:for-item="Titem" wx:for-index="Tindex" hidden="{{item.unfold==false}}">
+            <view class="t-item">
+
+              <view class="time">
+                <view class="a-year">{{Titem.year}}</view>
+                <view class="a-date">{{Titem.date}}</view>
+              </view>
+              
+              <view class="add-to-trolley" id="{{index}}?{{Tindex}}" hidden="{{Titem.num!=0}}" bindtap="addToTrolley3">
+                  加入预定篮
+              </view>
+              <view class="subtract-and-plus" hidden="{{Titem.num==0}}">
+                <view class="subtract" id="{{index}}?{{Tindex}}" bindtap="subTrolley3">
+                  <image src="../../images/icons/subtract.png"></image>
+                </view>
+                <view class="select-num">{{Titem.num}}</view>
+                <view class="add" id="{{index}}?{{Tindex}}" bindtap="addTrolley3">
+                  <image src="../../images/icons/plus.png"></image>
+                </view>
+              </view>
+
+            </view>
+          </view>
+          <!--内层结束-->
+        </view>
+      </block>
+    </view>
+    <!--外层结束-->
+    <view class="activity-total-price" style="display: flex">
+      <view class="activity-fee-text">总额</view>
+      <view class="price-num">¥ {{activityTotalPrice}}</view>
+    </view>
+  </view>
+
+  <!--tab2美食tab-->
+  <view class="food-tab" hidden="{{currentTab1!==2}}">
+
+    <view class="food-select">
+      <view class="select-text">餐饮选择</view>
+      <block wx:for="{{foodList}}" wx:for-item="item" wx:for-index="index">
+        <view class="item" style="display: flex">
+          <view class="food-name">{{item.name}}</view>
+          <view class="food-material-and-time">
+            <view class="material">{{item.material}}</view>
+            <view class="provide-time-text">供应时间: </view>
+            <view class="provide-time">{{item.time}}</view>
+          </view>
+          <view class="price">¥{{item.price}}</view>
+          <view class="add-to-trolley" id="{{index}}" bindtap="addToTrolley" hidden="{{item.num!=0}}">
+          加入预定篮
+          </view>
+          <view class="subtract-and-plus" hidden="{{item.num==0}}">
+            <view class="subtract" id="{{index}}" bindtap="subTrolley">
+              <image src="../../images/icons/subtract.png"></image>
+            </view>
+            <view class="select-num">{{item.num}}</view>
+            <view class="add" id="{{index}}" bindtap="addTrolley">
+              <image src="../../images/icons/plus.png"></image>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  
+
+    <view class="goods-select">
+      <view class="select-text">美食特产选择</view>
+      <block wx:for="{{goodsList}}" wx:for-item="item" wx:for-index="index">
+        <view class="item" style="display: flex">
+          <view class="goods-name-and-description">
+            <view class="goods-name">{{item.name}}</view>
+            <view class="description">{{item.description}}</view>
+          </view>
+          <view class="price">¥ {{item.price}}</view>
+          <view class="add-to-trolley" id="{{index}}" hidden="{{item.num!=0}}" bindtap="addToTrolley2">
+          加入预定篮
+          </view>
+          <view class="subtract-and-plus" hidden="{{item.num==0}}">
+            <view class="subtract" id="{{index}}" bindtap="subTrolley2">
+              <image src="../../images/icons/subtract.png"></image>
+            </view>
+            <view class="select-num">{{item.num}}</view>
+            <view class="add" id="{{index}}" bindtap="addTrolley2">
+              <image src="../../images/icons/plus.png"></image>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+
+    <view class="food-total-price" style="display: flex">
+      <view class="food-fee-text">总额</view>
+      <view class="price-num">¥ {{foodTotalPrice}}</view>
+    </view>
+
+  </view>
+  <!-- tab2结束 -->
+</view>
+
+<!--便利设施的tab-->
+<view class="facilities-tab" hidden="{{currentTab!==1}}" style="overflow: hidden">
+  <view class="facilities-and-service">
+    <view class="facilities-text">设施/服务</view>
+    <block class="facilities" wx:for="{{facilitiesList}}" wx:for-item="item" wx:for-index="index">
+      <view class="item" style="display: flex; align-items: center; text-align: center">
+          <view class="service-name">
+            <view class="service-img">
+              <image src="{{item.serviceUrl}}"></image>
+            </view>
+            <view class="service">{{item.serviceName}}</view>
+          </view>
+          <view class="service-content" >
+            <block class="block" wx:for="{{item.contentList}}" wx:for-item="sitem">
+                <view class="s-item" style="display: flex">
+                  <image src="../../images/icons/facilities/tick.png"></image>
+                  <text>{{sitem}}</text>
+                </view>
+            </block>
+          </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="boss-introduce">
+    <view class="introduce-text">房东介绍</view>
+    <view class="head-img-and-name" style="display:flex">
+      <image src="{{headImg}}"></image>
+      <view class="boss-name">{{bossName}}</view>
+    </view>
+    <view class="boss-sign">{{signContent}}</view>
+    <view class="look-boss" bindtap="bossDetail">进一步了解房东</view>
+  </view>
+
+  <view class="should-konw">
+    <view class="should-konw-text">预定须知</view>
+    <view class="stay-leave-time">
+      <view class="title-text">入住退房时间</view>
+      <view class="time">入住: 下午2:00之后，退房: 下午2:00</view>
+    </view>
+
+    <view class="cancel-policy">
+      <view class="cancel-policy-text">取消政策</view>
+      <view class="policy">若您因个人原因无法入住已预订酒店，请务必提前48小时申请取消订单；以入住当日14点为截点，如您未能提前48小时申请取消订单，平台将扣除30%的保证金；如您取消订单在入住当天14:00后，或者未取消订单且未入住，则平台将扣除100%保证金；若您一次性预订连续两晚，因会员自身原因只能入住一晚的，并在第二天14点前退房的，平台有权扣除已预订但未入住那天的保证金</view>
+      <!-- <view class="details">查看详情</view> -->
+    </view>
+
+    <!-- <view class="base-request">
+      <view class="request-text">基本要求</view>
+      <view class="request">要求要求要求要求要求要求要求要求要求要求要求要求要求要求要求要求要求要求要求要求要求要求要求要求要求要求要求</view>
+    </view> -->
+
+    <!-- <view class="point-out">
+      <view class="point-out-text">交易提示</view>
+      <view class="point-out-content">提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示提示</view>
+    </view> -->
+  </view>
+</view>
+
+<view class="should-know-tab" hidden="{{currentTab!=2}}">
+  <view class="should-know">
+    <view id="line1">预订须知</view>
+    <view id="line2">1、入住时间：14:00后，离店时间：次日12:00前。</view>
+    <view id="line3">2、入住时，需会员本人出示订单信息及身份证原件，同行人员及儿童也需提供本人身份证原件或户口簿登记入住。</view>
+    <view id="line4">3、入住时需交押金（具体金额以办理入住时酒店公布为准），退房时如无物品损坏或其他消费，押金将如数退还。</view>
+    <view id="line5">4、不允许携带宠物。</view>
+    <view id="line6">5、不允许商业拍照。</view>
+  </view>
+</view>
+
+<!--参观民宿的tab-->
+<view class="visit-tab" hidden="{{currentTab!=3}}" style="overflow: hidden">
+    <view class="drawer_content" style="height: {{windowHeight}}px">
+      <!-- <view class="top2">
+        <view class="cancel2" bindtap="visitButton" data-statu="close" wx:if="{{showModalStatus}}">×</view>
+        <image class="share2" src="../../images/icons/share.png"></image>
+        <image class="like2" src="../../images/icons/like_grey.png"></image>
+      </view> -->
+      <view class="living-room">
+        <view class="living-room-text">{{roomDetails.livingRoom.name}}</view>
+        <view class="description">{{roomDetails.livingRoom.description}}</view>
+        <view class="img" wx:for="{{roomDetails.livingRoom.pictureUrl}}" wx:for-item="item" wx:for-index="index">
+          <image src="{{item}}"></image>
+        </view>
+      </view>
+      <view class="bush-room">
+        <view class="bush-room-text">{{roomDetails.bushRoom.name}}</view>
+        <view class="description">{{roomDetails.bushRoom.description}}</view>
+        <view class="img" wx:for="{{roomDetails.bushRoom.pictureUrl}}" wx:for-item="item" wx:for-index="index">
+          <image src="{{item}}"></image>
+        </view>
+      </view>
+      <view class="bed-room">
+        <view class="bed-room-text">{{roomDetails.bedRoom.name}}</view>
+        <view class="description">{{roomDetails.bedRoom.description}}</view>
+        <view class="img" wx:for="{{roomDetails.bedRoom.pictureUrl}}" wx:for-item="item" wx:for-index="index">
+          <image src="{{item}}"></image>
+        </view>
+      </view>
+      <!-- <view class="price-and-book">
+        <view class="book" style="float: right">
+          <image src="../../images/icons/like_white.png"></image>
+          <text class="buy-text">预购房型</text>
+        </view>
+        <view class="low-price">
+          <text>¥{{price}}</text>
+          <text>起</text>
+        </view>
+      </view> -->
+    </view>
+    <view class="placeholder"></view>
+</view>
+
+
+<!--底部固定栏-->
+<view class="page_hd" style="z-index: 9999">
+  
+  <view class="trolley" style="position: relative">
+    <image class="trolley-image" src="../../images/icons/trolley.png" bindtap="trolleyTap" data-statu="open"></image>
+    <view class="item-nums" style="position: absolute">{{itemNum}}</view>
+  </view>
+  
+  <view class="bottom-price">
+    <text id="price">¥ {{price}}</text>
+    <text id="from">元</text>
+  </view>
+
+  <view class="book" bindtap="bookHouse">
+    <image src="../../images/icons/activities/lodging_white.png"></image>
+    <text>{{bookText}}</text>
+  </view>
+</view>
+
+<!-- <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view> -->
+<view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">
+  <!--drawer content-->
+  <!-- <view class="hidden-0" hidden="{{button!=0}}">
+    <view class="top2">
+      <view class="cancel2" bindtap="visitButton" data-statu="close" wx:if="{{showModalStatus}}">×</view>
+      <image class="share2" src="../../images/icons/share.png"></image>
+      <image class="like2" src="../../images/icons/like_grey.png"></image>
+    </view>
+    <view class="drawer_content" style="height: {{windowHeight}}px">
+      <view class="living-room">
+        <view class="living-room-text">{{roomDetails.livingRoom.name}}</view>
+        <view class="description">{{roomDetails.livingRoom.description}}</view>
+        <view class="img" wx:for="{{roomDetails.livingRoom.pictureUrl}}" wx:for-item="item" wx:for-index="index">
+          <image src="{{item}}"></image>
+        </view>
+      </view>
+      <view class="bush-room">
+        <view class="bush-room-text">{{roomDetails.bushRoom.name}}</view>
+        <view class="description">{{roomDetails.bushRoom.description}}</view>
+        <view class="img" wx:for="{{roomDetails.bushRoom.pictureUrl}}" wx:for-item="item" wx:for-index="index">
+          <image src="{{item}}"></image>
+        </view>
+      </view>
+      <view class="bed-room">
+        <view class="bed-room-text">{{roomDetails.bedRoom.name}}</view>
+        <view class="description">{{roomDetails.bedRoom.description}}</view>
+        <view class="img" wx:for="{{roomDetails.bedRoom.pictureUrl}}" wx:for-item="item" wx:for-index="index">
+          <image src="{{item}}"></image>
+        </view>
+      </view>
+      <view class="price-and-book">
+        <view class="book" style="float: right">
+          <image src="../../images/icons/like_white.png"></image>
+          <text class="buy-text">预购房型</text>
+        </view>
+        <view class="low-price">
+          <text>¥{{price}}</text>
+          <text>起</text>
+        </view>
+      </view>
+    </view>
+  </view> -->
+
+  <view class="hidden1" hidden="{{button!=1}}">
+    <view class="top3" style="display: flex">
+      <view class="cancel3" bindtap="trolleyTap" data-statu="close" wx:if="{{showModalStatus}}">×</view>
+      <view class="trolley-text">预定篮</view>
+    </view>
+    <view class="drawer_content2" style="height: {{windowHeight / 1.5}}px">
+
+      <view class="trolley-contents">
+        <!-- <view class="house-name">{{item.city}} · {{item.houseName}}  ></view> -->
+        <view class="house-trolley" wx:if="{{trolley.houseSelect.houseSelected==true}}" style="display: flex; flex-wrap: nowrap;">
+          <view class="house-img">
+            <image src="{{trolley.houseSelect.picture}}"/>
+          </view>
+          <view class="house-type-and-time">
+            <view class="house-type">{{trolley.houseSelect.houseType}}</view>
+            <view class="house-time">{{trolley.houseSelect.houseTime}}</view>
+          </view>
+          <view class="night-and-price">
+            <view class="house-price">¥{{trolley.houseSelect.actualFee}}</view>
+            <view class="night">{{night}}晚</view>
+          </view>
+        </view>
+
+        <view class="activity-trolley" wx:for="{{trolley.activityList}}" wx:for-item="item" wx:for-index="index">
+          <view class="single-activity" style="display: flex; position: relative">
+            <view class="activity-img">
+              <image src="{{item.picture}}"></image>
+            </view>
+            <view class="activity-and-time">
+              <view class="activity-text">{{item.name}}</view>
+              <view class="activity-time">{{item.time}}</view>
+            </view>
+            <view class="sub-plus" style="display: flex; position: absolute">
+              <image src="../../images/icons/subtract.png" id="{{index}}" bindtap="trolleySub"></image>
+              <view class="activity-num">{{item.num}}</view>
+              <image src="../../images/icons/plus.png" id="{{index}}" bindtap="trolleyAdd"></image>
+            </view>
+            <view class="activity-price">¥{{item.singlePrice * item.num}}</view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+  
+</view>
+
+<!-- <view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">
+  <view class="top2">
+      <view class="cancel2" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}">×</view>
+      <image class="share2" src="../../images/icons/share.png"></image>
+      <image class="like2" src="../../images/icons/like_grey.png"></image>
+  </view>
+  <view>内容</view>
+</view> -->
+

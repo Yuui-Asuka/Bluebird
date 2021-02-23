@@ -1,0 +1,19 @@
+<!--pages/do_what/do_what.wxml-->
+<!--pages/do_what.wxml-->
+<view class="top">你想参加什么样的活动?</view>
+<form>
+<view class="styles">
+  <view class="any-style">任何事情</view>
+  <block wx:for="{{activityList}}" wx:for-item="item" wx:for-index="index">
+    <view class="style {{item.flag==true?'active':''}}" id="{{index}}" bindtap="touchItem">
+      <view class="search-city">{{item.name}}</view>
+    </view>
+  </block>
+</view>
+
+<view class="sure">
+  <button bindtap="sure">确定</button>
+</view>
+
+</form>
+

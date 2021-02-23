@@ -1,0 +1,101 @@
+/* pages/my_certification/my_certification.wxss */
+/* pages/my_certification/my_certification.wxss */
+
+page{
+  background: pink;
+}
+
+.navbar{
+  /* flex: none; */
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  font-size: smaller;
+  box-shadow: 1px 1px 5px 1px rgb(179, 176, 176),-1px 1px 5px 1px rgb(179, 176, 176)  ;
+  width: 99%;
+}
+
+.navbar .items{
+  position: relative;
+  /* flex: auto; */
+  text-align: center;
+  line-height: 80rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar .items.active{
+  color: #5E7E7E;
+}
+
+.navbar .items.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -30%;
+  right: 0;
+  width: 160%;
+  height: 4rpx;
+  background: #5E7E7E;
+}
+
+.item{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  padding-bottom: 30rpx;
+  background: white;
+  border-radius: 10px;
+}
+
+.item .house-name{
+  margin-top: 20rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  padding-top: 15rpx;
+  padding-bottom: 10rpx;
+  font-size: 30rpx;
+  color:#5E7E7E;
+  font-weight: 600;
+  border-bottom: solid 2rpx rgb(221, 221, 221);
+}
+
+.aitem{
+  margin: 20rpx 40rpx 20rpx 40rpx;
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  background: rgb(250, 216, 216);
+  border-radius: 3px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+image{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.aitem .name-and-time{
+  margin-left: 25rpx;
+}
+
+.aitem .name{
+  font-weight: 600;
+}
+
+.aitem .time{
+  font-size: 25rpx;
+  opacity: 0.8;
+  width: 80%;
+}
+
+.aitem .use-now{
+  font-size: 32rpx;
+  width: 150rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-left: dotted 2rpx rgb(107, 107, 107);
+}

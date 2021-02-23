@@ -1,0 +1,34 @@
+<!--pages/where/where.wxml-->
+<!--pages/where/where.wxml-->
+<!-- <view class="search">
+  <view class="search-img">
+    <image src="../../images/icons/bottom_tab/search_grey.png"></image>
+  </view>
+  <view class="search-box">
+    <input placeholder="我想找...主题关键词/民宿/地点/活动"></input>
+  </view>
+</view> -->
+
+<view class="past-search">
+  <view class="past-search-text">最近的搜索</view>
+  <view class="block" style="display: flex">
+  <block wx:for="{{sList}}" wx:for-item="item" >
+    <view class="item">
+      <view class="search-city">{{item}}</view>
+    </view>
+  </block>
+  </view>
+</view>
+
+<view class="hot-city">
+  <view class="hot-city-text">热门城市</view>
+  <view class="block" style="display: flex">
+    <block wx:for="{{cityList}}" wx:for-item="item" wx:for-index="index" style="display: flex">
+      <view class="item" bindtap="cityChoose" id="{{index}}">
+        <view class="search-city">{{item}}</view>
+      </view>
+    </block>
+  </view>
+</view>
+
+
