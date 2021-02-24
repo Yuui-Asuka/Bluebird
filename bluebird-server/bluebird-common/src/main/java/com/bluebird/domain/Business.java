@@ -32,7 +32,7 @@ public class Business implements Serializable{
          */
         private String city;
         /**
-         * 商家入驻时间
+         * 商家入驻时间，用时间戳表示
          */
         private Long entryTime;
         /**

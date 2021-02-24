@@ -3,24 +3,68 @@ package com.bluebird.domain;
 import java.io.Serializable;
 
 public class User implements Serializable {
+
     private String id;
+    /**
+     * 用户Id
+     */
     private String openId;
+    /**
+     * 用户的密钥
+     */
     private String sessionKey;
+    /**
+     * 用户名
+     */
     private String userName;
+    /**
+     * 用户密码
+     */
     private String password;
+    /**
+     * 用户头像
+     */
     private String headImg;
+    /**
+     * 用户账户余额
+     */
+    private Integer restMoney;
+    /**
+     * 用户电话
+     */
     private String phone;
+    /**
+     * 用户签名
+     */
     private String sign;
+    /**
+     * 用户城市
+     */
     private String city;
     /**
      * 性别 男为0，女为1
      */
-    private Long sex;
-    private Long cityId;
+    private short sex;
+    /**
+     * 用户注册时间
+     */
     private Long createTime;
-    private Long available;
+    /**
+     * 用户加入/退出
+     */
+    private short available;
     private String placeholder1;
     private String placeholder2;
+
+
+
+    public Integer getRestMoney() {
+        return restMoney;
+    }
+
+    public void setRestMoney(Integer restMoney) {
+        this.restMoney = restMoney;
+    }
 
     public String getCity() {
         return city;
@@ -103,21 +147,12 @@ public class User implements Serializable {
     }
 
 
-    public Long getSex() {
+    public short getSex() {
         return sex;
     }
 
-    public void setSex(Long sex) {
+    public void setSex(short sex) {
         this.sex = sex;
-    }
-
-
-    public Long getCityId() {
-        return cityId;
-    }
-
-    public void setCityId(Long cityId) {
-        this.cityId = cityId;
     }
 
 
@@ -131,11 +166,11 @@ public class User implements Serializable {
     }
 
 
-    public Long getAvailable() {
+    public short getAvailable() {
         return available;
     }
 
-    public void setAvailable(Long available) {
+    public void setAvailable(short available) {
         this.available = available;
     }
 

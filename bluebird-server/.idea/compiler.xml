@@ -10,12 +10,12 @@
         <module name="bluebird-login-service" />
         <module name="bluebird-charge-service" />
         <module name="bluebird-api-gateway" />
+        <module name="bluebird-journey-service" />
         <module name="bluebird-room-service" />
         <module name="bluebird-business-service" />
-        <module name="bluebird-card-service" />
+        <module name="bluebird-keep-service" />
         <module name="bluebird-activity-service" />
         <module name="bluebird-common" />
-        <module name="bluebird-house-service" />
         <module name="bluebird-map-service" />
       </profile>
     </annotationProcessing>
@@ -26,10 +26,10 @@
       <module name="bluebird-activity-service" options="-parameters" />
       <module name="bluebird-api-gateway" options="-parameters" />
       <module name="bluebird-business-service" options="-parameters" />
-      <module name="bluebird-card-service" options="-parameters" />
       <module name="bluebird-charge-service" options="-parameters" />
       <module name="bluebird-common" options="-parameters" />
-      <module name="bluebird-house-service" options="-parameters" />
+      <module name="bluebird-journey-service" options="-parameters" />
+      <module name="bluebird-keep-service" options="-parameters" />
       <module name="bluebird-login-service" options="-parameters" />
       <module name="bluebird-map-service" options="-parameters" />
       <module name="bluebird-payment-service" options="-parameters" />

@@ -10,4 +10,5 @@ public interface BusinessService {
     public Business find(String businessCode);
 
     public List<Business> findList();
+    
 }
