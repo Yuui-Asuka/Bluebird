@@ -1,0 +1,152 @@
+2021-02-19 02:38:59,854 INFO DEFAULT_GROUP@@api-gateway is changed, add it to push queue.
+
+2021-02-19 02:38:59,874 INFO serviceName: DEFAULT_GROUP@@api-gateway changed, schedule push for: 192.168.0.104:61295, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,61295,171187266092300
+
+2021-02-19 02:38:59,876 INFO send udp packet: 192.168.0.104,61295,171187266092300
+
+2021-02-19 02:38:59,883 INFO [PUSH-SUCC] 30ms, all delay time 624ms, SLA 624ms, Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=1}, DataSize=1, target=192.168.0.104
+
+2021-02-19 02:42:00,679 INFO DEFAULT_GROUP@@bluebird-business-service is changed, add it to push queue.
+
+2021-02-19 02:42:00,680 INFO serviceName: DEFAULT_GROUP@@bluebird-business-service changed, schedule push for: 192.168.0.104:61295, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,61295,171368089378200
+
+2021-02-19 02:42:00,680 INFO send udp packet: 192.168.0.104,61295,171368089378200
+
+2021-02-19 02:42:00,683 INFO [PUSH-SUCC] 4ms, all delay time 569ms, SLA 569ms, Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=3}, DataSize=2, target=192.168.0.104
+
+2021-02-19 02:43:07,923 INFO DEFAULT_GROUP@@api-gateway is changed, add it to push queue.
+
+2021-02-19 02:43:07,923 INFO serviceName: DEFAULT_GROUP@@api-gateway changed, schedule push for: 192.168.0.104:61295, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,61295,171435332694300
+
+2021-02-19 02:43:07,923 INFO DEFAULT_GROUP@@api-gateway is changed, add it to push queue.
+
+2021-02-19 02:43:07,923 INFO send udp packet: 192.168.0.104,61295,171435332694300
+
+2021-02-19 02:43:07,924 INFO serviceName: DEFAULT_GROUP@@api-gateway changed, schedule push for: 192.168.0.104:61785, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,61785,171435333014100
+
+2021-02-19 02:43:07,924 INFO send udp packet: 192.168.0.104,61785,171435333014100
+
+2021-02-19 02:43:07,928 INFO [PUSH-SUCC] 5ms, all delay time 600ms, SLA 600ms, Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=2}, DataSize=1, target=192.168.0.104
+
+2021-02-19 02:43:17,924 INFO retry to push data, key: 192.168.0.104,61295,171435332694300
+
+2021-02-19 02:43:27,925 WARN max re-push times reached, retry times 2, key: 192.168.0.104,61295,171435332694300
+
+2021-02-19 02:43:27,925 ERROR [PUSH-FAIL] 20002ms, Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=2}, reason=null, target=192.168.0.104
+
+2021-02-19 02:43:54,839 INFO DEFAULT_GROUP@@api-gateway is changed, add it to push queue.
+
+2021-02-19 02:43:54,839 INFO serviceName: DEFAULT_GROUP@@api-gateway changed, schedule push for: 192.168.0.104:61785, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,61785,171482248767900
+
+2021-02-19 02:43:54,839 INFO send udp packet: 192.168.0.104,61785,171482248767900
+
+2021-02-19 02:43:56,646 INFO DEFAULT_GROUP@@bluebird-business-service is changed, add it to push queue.
+
+2021-02-19 02:43:56,647 INFO serviceName: DEFAULT_GROUP@@bluebird-business-service changed, schedule push for: 192.168.0.104:61785, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,61785,171484055452600
+
+2021-02-19 02:43:56,647 INFO send udp packet: 192.168.0.104,61785,171484055452600
+
+2021-02-19 02:43:57,851 INFO DEFAULT_GROUP@@api-gateway is changed, add it to push queue.
+
+2021-02-19 02:43:57,851 INFO serviceName: DEFAULT_GROUP@@api-gateway changed, schedule push for: 192.168.0.104:58772, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,58772,171485261095700
+
+2021-02-19 02:43:57,851 INFO DEFAULT_GROUP@@api-gateway is changed, add it to push queue.
+
+2021-02-19 02:43:57,851 INFO send udp packet: 192.168.0.104,58772,171485261095700
+
+2021-02-19 02:43:57,852 INFO serviceName: DEFAULT_GROUP@@api-gateway changed, schedule push for: 192.168.0.104:61785, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,61785,171485261494700
+
+2021-02-19 02:43:57,852 INFO send udp packet: 192.168.0.104,61785,171485261494700
+
+2021-02-19 02:43:57,857 INFO [PUSH-SUCC] 6ms, all delay time 545ms, SLA 545ms, Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=3}, DataSize=1, target=192.168.0.104
+
+2021-02-19 02:44:04,841 INFO retry to push data, key: 192.168.0.104,61785,171482248767900
+
+2021-02-19 02:44:06,648 INFO retry to push data, key: 192.168.0.104,61785,171484055452600
+
+2021-02-19 02:44:07,854 INFO retry to push data, key: 192.168.0.104,61785,171485261494700
+
+2021-02-19 02:44:11,694 INFO DEFAULT_GROUP@@bluebird-business-service is changed, add it to push queue.
+
+2021-02-19 02:44:11,695 INFO serviceName: DEFAULT_GROUP@@bluebird-business-service changed, schedule push for: 192.168.0.104:58772, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,58772,171499104386900
+
+2021-02-19 02:44:11,695 INFO send udp packet: 192.168.0.104,58772,171499104386900
+
+2021-02-19 02:44:11,698 INFO [PUSH-SUCC] 4ms, all delay time 561ms, SLA 561ms, Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=4}, DataSize=1, target=192.168.0.104
+
+2021-02-19 02:44:13,299 INFO DEFAULT_GROUP@@bluebird-business-service is changed, add it to push queue.
+
+2021-02-19 02:44:13,299 INFO serviceName: DEFAULT_GROUP@@bluebird-business-service changed, schedule push for: 192.168.0.104:58772, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,58772,171500708696400
+
+2021-02-19 02:44:13,300 INFO send udp packet: 192.168.0.104,58772,171500708696400
+
+2021-02-19 02:44:13,307 INFO [PUSH-SUCC] 8ms, all delay time 529ms, SLA 529ms, Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=5}, DataSize=2, target=192.168.0.104
+
+2021-02-19 02:44:14,842 WARN max re-push times reached, retry times 2, key: 192.168.0.104,61785,171482248767900
+
+2021-02-19 02:44:14,842 ERROR [PUSH-FAIL] 20003ms, Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=3}, reason=null, target=192.168.0.104
+
+2021-02-19 02:44:16,649 WARN max re-push times reached, retry times 2, key: 192.168.0.104,61785,171484055452600
+
+2021-02-19 02:44:16,649 ERROR [PUSH-FAIL] 20003ms, Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=5}, reason=null, target=192.168.0.104
+
+2021-02-19 02:44:17,855 WARN max re-push times reached, retry times 2, key: 192.168.0.104,61785,171485261494700
+
+2021-02-19 02:44:17,855 ERROR [PUSH-FAIL] 20004ms, Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=3}, reason=null, target=192.168.0.104
+
+2021-02-19 02:45:15,736 INFO DEFAULT_GROUP@@api-gateway is changed, add it to push queue.
+
+2021-02-19 02:45:15,736 INFO serviceName: DEFAULT_GROUP@@api-gateway changed, schedule push for: 192.168.0.104:58772, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,58772,171563145840900
+
+2021-02-19 02:45:15,737 INFO DEFAULT_GROUP@@api-gateway is changed, add it to push queue.
+
+2021-02-19 02:45:15,737 INFO send udp packet: 192.168.0.104,58772,171563145840900
+
+2021-02-19 02:45:15,738 INFO serviceName: DEFAULT_GROUP@@api-gateway changed, schedule push for: 192.168.0.104:50060, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,50060,171563146291100
+
+2021-02-19 02:45:15,738 INFO send udp packet: 192.168.0.104,50060,171563146291100
+
+2021-02-19 02:45:15,743 INFO [PUSH-SUCC] 6ms, all delay time 584ms, SLA 584ms, Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=4}, DataSize=1, target=192.168.0.104
+
+2021-02-19 02:45:25,738 INFO retry to push data, key: 192.168.0.104,58772,171563145840900
+
+2021-02-19 02:45:35,740 WARN max re-push times reached, retry times 2, key: 192.168.0.104,58772,171563145840900
+
+2021-02-19 02:45:35,740 ERROR [PUSH-FAIL] 20004ms, Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=4}, reason=null, target=192.168.0.104
+
+2021-02-19 02:45:49,855 INFO DEFAULT_GROUP@@api-gateway is changed, add it to push queue.
+
+2021-02-19 02:45:49,856 INFO serviceName: DEFAULT_GROUP@@api-gateway changed, schedule push for: 192.168.0.104:50060, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,50060,171597265113000
+
+2021-02-19 02:45:49,856 INFO send udp packet: 192.168.0.104,50060,171597265113000
+
+2021-02-19 02:45:59,858 INFO retry to push data, key: 192.168.0.104,50060,171597265113000
+
+2021-02-19 02:46:04,909 INFO DEFAULT_GROUP@@api-gateway is changed, add it to push queue.
+
+2021-02-19 02:46:04,909 INFO serviceName: DEFAULT_GROUP@@api-gateway changed, schedule push for: 192.168.0.104:60146, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,60146,171612319081600
+
+2021-02-19 02:46:04,909 INFO send udp packet: 192.168.0.104,60146,171612319081600
+
+2021-02-19 02:46:04,914 INFO [PUSH-SUCC] 5ms, all delay time 579ms, SLA 579ms, Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=5}, DataSize=0, target=192.168.0.104
+
+2021-02-19 02:46:05,513 INFO DEFAULT_GROUP@@api-gateway is changed, add it to push queue.
+
+2021-02-19 02:46:05,513 INFO serviceName: DEFAULT_GROUP@@api-gateway changed, schedule push for: 192.168.0.104:60146, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,60146,171612922457500
+
+2021-02-19 02:46:05,513 INFO send udp packet: 192.168.0.104,60146,171612922457500
+
+2021-02-19 02:46:05,516 INFO [PUSH-SUCC] 3ms, all delay time 593ms, SLA 593ms, Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=6}, DataSize=1, target=192.168.0.104
+
+2021-02-19 02:46:09,858 WARN max re-push times reached, retry times 2, key: 192.168.0.104,50060,171597265113000
+
+2021-02-19 02:46:09,858 ERROR [PUSH-FAIL] 20003ms, Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=6}, reason=null, target=192.168.0.104
+
+2021-02-19 02:46:31,702 INFO DEFAULT_GROUP@@bluebird-business-service is changed, add it to push queue.
+
+2021-02-19 02:46:31,703 INFO serviceName: DEFAULT_GROUP@@bluebird-business-service changed, schedule push for: 192.168.0.104:60146, agent: Nacos-Java-Client:v1.2.1, key: 192.168.0.104,60146,171639111490200
+
+2021-02-19 02:46:31,703 INFO send udp packet: 192.168.0.104,60146,171639111490200
+
+2021-02-19 02:46:31,706 INFO [PUSH-SUCC] 4ms, all delay time 603ms, SLA 603ms, Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=6}, DataSize=2, target=192.168.0.104
+

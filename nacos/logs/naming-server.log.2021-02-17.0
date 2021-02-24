@@ -1,0 +1,12 @@
+2021-02-17 20:03:45,917 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2021-02-17 20:03:45,918 INFO listen for service meta change
+
+2021-02-17 20:12:20,473 INFO Client connection 192.168.0.104:9000#true connect
+
+2021-02-17 20:12:20,475 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=0}, 192.168.0.104:9000#true
+
+2021-02-17 20:21:26,646 INFO Client connection 192.168.0.104:9001#true connect
+
+2021-02-17 20:21:26,646 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=1}, 192.168.0.104:9001#true
+

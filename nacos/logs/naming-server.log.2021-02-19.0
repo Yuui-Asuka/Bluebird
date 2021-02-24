@@ -1,0 +1,86 @@
+2021-02-19 01:41:36,030 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2021-02-19 01:41:36,031 INFO listen for service meta change
+
+2021-02-19 01:53:51,650 INFO Client connection 192.168.0.104:9000#true connect
+
+2021-02-19 01:53:51,651 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=0}, 192.168.0.104:9000#true
+
+2021-02-19 02:32:46,036 INFO Client connection 192.168.0.104:9002#true connect
+
+2021-02-19 02:32:46,036 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=1}, 192.168.0.104:9002#true
+
+2021-02-19 02:38:58,812 INFO Client connection 192.168.0.104:61295#true connect
+
+2021-02-19 02:38:58,812 INFO Client connection 192.168.0.104:61295#true connect
+
+2021-02-19 02:38:58,812 INFO Client connection 192.168.0.104:61295#true connect
+
+2021-02-19 02:38:59,259 INFO Client connection 192.168.0.104:8888#true connect
+
+2021-02-19 02:38:59,259 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=0}, 192.168.0.104:8888#true
+
+2021-02-19 02:42:00,114 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=2}, 192.168.0.104:9002#true
+
+2021-02-19 02:43:06,893 INFO Client connection 192.168.0.104:61785#true connect
+
+2021-02-19 02:43:06,893 INFO Client connection 192.168.0.104:61785#true connect
+
+2021-02-19 02:43:06,893 INFO Client connection 192.168.0.104:61785#true connect
+
+2021-02-19 02:43:06,893 INFO Client connection 192.168.0.104:61785#true connect
+
+2021-02-19 02:43:07,328 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=1}, 192.168.0.104:8888#true
+
+2021-02-19 02:43:23,618 INFO Client connection 192.168.0.104:61295#true disconnect, remove instances and subscribers
+
+2021-02-19 02:43:56,871 INFO Client connection 192.168.0.104:58772#true connect
+
+2021-02-19 02:43:56,871 INFO Client connection 192.168.0.104:58772#true connect
+
+2021-02-19 02:43:56,871 INFO Client connection 192.168.0.104:58772#true connect
+
+2021-02-19 02:43:56,871 INFO Client connection 192.168.0.104:58772#true connect
+
+2021-02-19 02:43:56,871 INFO Client connection 192.168.0.104:58772#true connect
+
+2021-02-19 02:43:56,871 INFO Client connection 192.168.0.104:58772#true connect
+
+2021-02-19 02:43:57,312 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=2}, 192.168.0.104:8888#true
+
+2021-02-19 02:44:08,627 INFO Client connection 192.168.0.104:61785#true disconnect, remove instances and subscribers
+
+2021-02-19 02:44:11,137 INFO [AUTO-DELETE-IP] service: Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=3}, ip: {"ip":"192.168.0.104","port":9002,"healthy":false,"cluster":"DEFAULT","extendDatum":{"preserved.register.source":"SPRING_CLOUD","customInstanceId":"192.168.0.104#9002#DEFAULT#DEFAULT_GROUP@@bluebird-business-service"},"lastHeartBeatTime":1613673820169,"metadataId":"192.168.0.104:9002:DEFAULT"}
+
+2021-02-19 02:44:11,137 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=3}, 192.168.0.104:9002#true
+
+2021-02-19 02:44:12,778 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=4}, 192.168.0.104:9002#true
+
+2021-02-19 02:45:14,607 INFO Client connection 192.168.0.104:50060#true connect
+
+2021-02-19 02:45:14,607 INFO Client connection 192.168.0.104:50060#true connect
+
+2021-02-19 02:45:15,159 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=3}, 192.168.0.104:8888#true
+
+2021-02-19 02:45:28,639 INFO Client connection 192.168.0.104:58772#true disconnect, remove instances and subscribers
+
+2021-02-19 02:45:58,645 INFO Client connection 192.168.0.104:50060#true disconnect, remove instances and subscribers
+
+2021-02-19 02:46:04,335 INFO [AUTO-DELETE-IP] service: Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=4}, ip: {"ip":"192.168.0.104","port":8888,"healthy":false,"cluster":"DEFAULT","extendDatum":{"preserved.register.source":"SPRING_CLOUD","customInstanceId":"192.168.0.104#8888#DEFAULT#DEFAULT_GROUP@@api-gateway"},"lastHeartBeatTime":1613673930169,"metadataId":"192.168.0.104:8888:DEFAULT"}
+
+2021-02-19 02:46:04,335 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=4}, 192.168.0.104:8888#true
+
+2021-02-19 02:46:04,485 INFO Client connection 192.168.0.104:60146#true connect
+
+2021-02-19 02:46:04,485 INFO Client connection 192.168.0.104:60146#true connect
+
+2021-02-19 02:46:04,485 INFO Client connection 192.168.0.104:60146#true connect
+
+2021-02-19 02:46:04,485 INFO Client connection 192.168.0.104:60146#true connect
+
+2021-02-19 02:46:04,485 INFO Client connection 192.168.0.104:60146#true connect
+
+2021-02-19 02:46:04,922 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='api-gateway', ephemeral=true, revision=5}, 192.168.0.104:8888#true
+
+2021-02-19 02:46:31,103 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=5}, 192.168.0.104:9002#true
+

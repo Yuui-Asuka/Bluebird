@@ -1,0 +1,6 @@
+2021-02-21 01:33:58,675 INFO [dump-all-ok] bluebird-business-service+DEFAULT_GROUP, 1613670908210, length=774, md5=1bfdb12a0ef83c8db55fb5f9d2048b2e
+
+2021-02-21 01:33:58,678 INFO [dump-all-ok] bluebird-activity-service+DEFAULT_GROUP, 1613675493426, length=961, md5=9adb467b393ba12b604964e7a373fd66
+
+2021-02-21 03:28:07,247 WARN [dump-ignore] ignore to save cache file. groupKey=bluebird-business-service+DEFAULT_GROUP, md5=f7ab106cb0633253b56730ed883fcee2, lastModifiedOld=1613849208443, lastModifiedNew=1613849287195
+

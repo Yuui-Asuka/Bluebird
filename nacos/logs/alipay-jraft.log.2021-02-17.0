@@ -1,0 +1,96 @@
+2021-02-17 20:03:48,117 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2021-02-17 20:03:48,216 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2021-02-17 20:03:48,390 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2021-02-17 20:03:48,397 INFO The number of active nodes increment to 1.
+
+2021-02-17 20:03:48,649 INFO Starts FSMCaller successfully.
+
+2021-02-17 20:03:48,660 WARN No data for snapshot reader C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot.
+
+2021-02-17 20:03:48,687 INFO Node <naming_persistent_service_v2/192.168.0.104:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=192.168.0.104:7848, oldConf=.
+
+2021-02-17 20:03:48,690 INFO Node <naming_persistent_service_v2/192.168.0.104:7848> start vote and grant vote self, term=0.
+
+2021-02-17 20:03:48,711 WARN Unable to fsync directory C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\meta-data on windows.
+
+2021-02-17 20:03:48,718 INFO Save raft meta, path=C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\meta-data, term=1, votedFor=192.168.0.104:7848, cost time=20 ms
+
+2021-02-17 20:03:48,718 INFO Node <naming_persistent_service_v2/192.168.0.104:7848> become leader of group, term=1, conf=192.168.0.104:7848, oldConf=.
+
+2021-02-17 20:03:48,722 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2021-02-17 20:03:48,725 WARN RPC server is not started in RaftGroupService.
+
+2021-02-17 20:03:48,725 INFO Start the RaftGroupService successfully.
+
+2021-02-17 20:03:48,737 INFO onLeaderStart: term=1.
+
+2021-02-17 20:03:48,762 INFO The number of active nodes increment to 2.
+
+2021-02-17 20:03:48,815 INFO Starts FSMCaller successfully.
+
+2021-02-17 20:03:48,815 WARN No data for snapshot reader C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_instance_metadata\snapshot.
+
+2021-02-17 20:03:48,816 INFO Node <naming_instance_metadata/192.168.0.104:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=192.168.0.104:7848, oldConf=.
+
+2021-02-17 20:03:48,817 INFO Node <naming_instance_metadata/192.168.0.104:7848> start vote and grant vote self, term=0.
+
+2021-02-17 20:03:48,821 WARN Unable to fsync directory C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_instance_metadata\meta-data on windows.
+
+2021-02-17 20:03:48,821 INFO Save raft meta, path=C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_instance_metadata\meta-data, term=1, votedFor=192.168.0.104:7848, cost time=4 ms
+
+2021-02-17 20:03:48,822 INFO Node <naming_instance_metadata/192.168.0.104:7848> become leader of group, term=1, conf=192.168.0.104:7848, oldConf=.
+
+2021-02-17 20:03:48,822 WARN RPC server is not started in RaftGroupService.
+
+2021-02-17 20:03:48,822 INFO Start the RaftGroupService successfully.
+
+2021-02-17 20:03:48,824 INFO onLeaderStart: term=1.
+
+2021-02-17 20:03:48,829 INFO The number of active nodes increment to 3.
+
+2021-02-17 20:03:48,848 WARN Channel in TRANSIENT_FAILURE state: 192.168.0.104:7848.
+
+2021-02-17 20:03:48,848 WARN Channel in SHUTDOWN state: 192.168.0.104:7848.
+
+2021-02-17 20:03:48,878 INFO Starts FSMCaller successfully.
+
+2021-02-17 20:03:48,878 WARN No data for snapshot reader C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_service_metadata\snapshot.
+
+2021-02-17 20:03:48,879 INFO Node <naming_service_metadata/192.168.0.104:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=192.168.0.104:7848, oldConf=.
+
+2021-02-17 20:03:48,879 INFO Node <naming_service_metadata/192.168.0.104:7848> start vote and grant vote self, term=0.
+
+2021-02-17 20:03:48,883 WARN Unable to fsync directory C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_service_metadata\meta-data on windows.
+
+2021-02-17 20:03:48,884 INFO Save raft meta, path=C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_service_metadata\meta-data, term=1, votedFor=192.168.0.104:7848, cost time=4 ms
+
+2021-02-17 20:03:48,884 INFO Node <naming_service_metadata/192.168.0.104:7848> become leader of group, term=1, conf=192.168.0.104:7848, oldConf=.
+
+2021-02-17 20:03:48,884 WARN RPC server is not started in RaftGroupService.
+
+2021-02-17 20:03:48,884 INFO Start the RaftGroupService successfully.
+
+2021-02-17 20:03:48,885 INFO onLeaderStart: term=1.
+
+2021-02-17 20:23:55,085 WARN Unable to fsync directory C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\temp on windows.
+
+2021-02-17 20:23:55,085 INFO Deleting snapshot C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\snapshot_1.
+
+2021-02-17 20:23:55,085 INFO Renaming C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\temp to C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\snapshot_1.
+
+2021-02-17 20:28:38,050 WARN Unable to fsync directory C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_service_metadata\snapshot\temp on windows.
+
+2021-02-17 20:28:38,050 INFO Deleting snapshot C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_service_metadata\snapshot\snapshot_1.
+
+2021-02-17 20:28:38,050 INFO Renaming C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_service_metadata\snapshot\temp to C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_service_metadata\snapshot\snapshot_1.
+
+2021-02-17 20:30:45,539 WARN Unable to fsync directory C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_instance_metadata\snapshot\temp on windows.
+
+2021-02-17 20:30:45,539 INFO Deleting snapshot C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_instance_metadata\snapshot\snapshot_1.
+
+2021-02-17 20:30:45,539 INFO Renaming C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_instance_metadata\snapshot\temp to C:\Users\Administrator\Desktop\nacos\data\protocol\raft\naming_instance_metadata\snapshot\snapshot_1.
+

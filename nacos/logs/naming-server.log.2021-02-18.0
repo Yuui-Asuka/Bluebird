@@ -1,0 +1,6 @@
+2021-02-18 00:58:57,753 INFO [AUTO-DELETE-IP] service: Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=2}, ip: {"ip":"192.168.0.104","port":9000,"healthy":false,"cluster":"DEFAULT","extendDatum":{"preserved.register.source":"SPRING_CLOUD","customInstanceId":"192.168.0.104#9000#DEFAULT#DEFAULT_GROUP@@bluebird-business-service"},"lastHeartBeatTime":1613581104219,"metadataId":"192.168.0.104:9000:DEFAULT"}
+
+2021-02-18 00:58:57,753 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='bluebird-business-service', ephemeral=true, revision=2}, 192.168.0.104:9000#true
+
+2021-02-18 00:59:00,443 INFO Client connection 192.168.0.104:9000#true disconnect, remove instances and subscribers
+
