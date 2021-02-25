@@ -1,3 +1,4 @@
+com\bluebird\config\MyBlockExceptionHandler.class
 com\bluebird\dao\BusinessMapper.class
 com\bluebird\service\impl\BusinessServiceImpl.class
 com\bluebird\BusinessApplication.class
