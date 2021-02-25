@@ -1,5 +1,6 @@
 package com.bluebird.controller;
 
+import brave.http.HttpServerRequest;
 import com.bluebird.service.BusinessService;
 import com.bluebird.domain.Business;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 @RestController
@@ -29,7 +33,6 @@ public class BusinessInfoController {
 
     @GetMapping("find_by_id")
     Business find(@RequestParam(value="business_code") String businessCode){
-        String q = "dd";
         return businessService.find(businessCode);
 
     }
@@ -37,6 +40,13 @@ public class BusinessInfoController {
     @GetMapping("find_list")
     List<Business> findList(){
         return businessService.findList();
+    }
+
+    @RequestMapping("test")
+    public Map<String, Object> test(HttpServletRequest request){
+        Map<String, Object> map = new HashMap<>();
+        map.put("port", request.getServerPort() + "");
+        return map;
     }
 
 }

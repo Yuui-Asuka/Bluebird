@@ -4,3 +4,4 @@ com\bluebird\service\impl\BusinessServiceImpl.class
 com\bluebird\BusinessApplication.class
 com\bluebird\controller\BusinessInfoController.class
 com\bluebird\service\BusinessService.class
+com\bluebird\service\fallback\BusinessServiceFallback.class

@@ -12,7 +12,6 @@ import java.util.List;
 
 
 @Service
-@FeignClient(value = "bluebird-business-service", fallback = BusinessServiceFallback.class)
 public class BusinessServiceImpl implements BusinessService {
 
     @Autowired
