@@ -10,8 +10,8 @@
         <module>bluebird-common</module>
         <module>bluebird-business-service</module>
         <module>bluebird-charge-service</module>
-        <module>bluebird-house-service</module>
-        <module>bluebird-card-service</module>
+        <module>bluebird-journey-service</module>
+        <module>bluebird-keep-service</module>
         <module>bluebird-login-service</module>
         <module>bluebird-room-service</module>
         <module>bluebird-map-service</module>

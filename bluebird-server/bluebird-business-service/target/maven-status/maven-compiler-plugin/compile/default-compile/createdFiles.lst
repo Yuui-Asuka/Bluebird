@@ -1,7 +1,9 @@
+com\bluebird\RedisService.class
 com\bluebird\config\MyBlockExceptionHandler.class
 com\bluebird\dao\BusinessMapper.class
 com\bluebird\service\impl\BusinessServiceImpl.class
 com\bluebird\BusinessApplication.class
+com\bluebird\RedisConfig.class
 com\bluebird\controller\BusinessInfoController.class
 com\bluebird\service\BusinessService.class
 com\bluebird\service\fallback\BusinessServiceFallback.class

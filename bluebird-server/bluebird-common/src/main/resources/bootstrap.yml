@@ -10,3 +10,16 @@ spring:
 
   profiles:
     active: dev
+
+txmap:
+  key: XXX
+  url: XXX
+  url2: XXX
+wxlogin:
+  address: XXX
+wxpay:
+  pay: XXX
+  spBillCreateIp: XXX
+  notifyUrl: XXX
+  tradeType: XXX
+  key: XXX

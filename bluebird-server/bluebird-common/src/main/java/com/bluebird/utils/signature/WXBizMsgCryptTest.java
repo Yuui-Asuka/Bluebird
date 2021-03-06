@@ -147,6 +147,5 @@ public class WXBizMsgCryptTest {
         String nonce = "263014780";
         String echoStr = "P9nAzCzyDtyTWESHep1vC5X9xho/qYX3Zpb4yKa9SKld1DsH3Iyt3tP3zNdtp+4RPcs8TgAE7OaBO+FZXvnaqQ==";
         wxcpt.verifyUrl(verifyMsgSig, timeStamp, nonce, echoStr);
-        // 只要不抛出异常就好
     }
 }
