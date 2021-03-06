@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e722c371-04f8-446b-8dac-79d0ca089406" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/bluebird-server/bluebird-business-service/src/main/java/com/bluebird/BusinessApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bluebird-server/bluebird-business-service/src/main/java/com/bluebird/BusinessApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bluebird-server/bluebird-business-service/src/main/java/com/bluebird/controller/BusinessInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bluebird-server/bluebird-business-service/src/main/java/com/bluebird/controller/BusinessInfoController.java" afterDir="false" />
-    </list>
+    <list default="true" id="e722c371-04f8-446b-8dac-79d0ca089406" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +36,7 @@
       <workItem from="1613993855974" duration="26000" />
       <workItem from="1614017817839" duration="15000" />
       <workItem from="1614507740179" duration="23000" />
+      <workItem from="1615042541303" duration="13000" />
     </task>
     <servers />
   </component>
