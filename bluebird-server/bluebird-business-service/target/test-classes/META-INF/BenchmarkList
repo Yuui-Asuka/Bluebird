@@ -1,0 +1,7 @@
+JMH S 31 com.bluebird.jmh.CollectionTest S 64 com.bluebird.jmh.generated.CollectionTest_ArrayListTest1_jmhTest S 14 ArrayListTest1 S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
+JMH S 24 com.bluebird.jmh.JMHTest S 60 com.bluebird.jmh.generated.JMHTest_testStringBuilder_jmhTest S 17 testStringBuilder S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
+JMH S 24 com.bluebird.jmh.JMHTest S 53 com.bluebird.jmh.generated.JMHTest_testString_jmhTest S 10 testString S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
+JMH S 24 com.bluebird.jmh.JMHTest S 59 com.bluebird.jmh.generated.JMHTest_testStringBuffer_jmhTest S 16 testStringBuffer S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
+JMH S 31 com.bluebird.jmh.CollectionTest S 63 com.bluebird.jmh.generated.CollectionTest_ArrayListTest_jmhTest S 13 ArrayListTest S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
+JMH S 31 com.bluebird.jmh.CollectionTest S 64 com.bluebird.jmh.generated.CollectionTest_LinkedListTest_jmhTest S 14 LinkedListTest S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
+JMH S 31 com.bluebird.jmh.CollectionTest S 65 com.bluebird.jmh.generated.CollectionTest_LinkedListTest1_jmhTest S 15 LinkedListTest1 S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 

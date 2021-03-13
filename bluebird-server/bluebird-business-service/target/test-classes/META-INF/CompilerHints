@@ -1,0 +1,12 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,com/bluebird/jmh/CollectionTest.ArrayListTest
+inline,com/bluebird/jmh/CollectionTest.ArrayListTest1
+inline,com/bluebird/jmh/CollectionTest.LinkedListTest
+inline,com/bluebird/jmh/CollectionTest.LinkedListTest1
+inline,com/bluebird/jmh/JMHTest.testString
+inline,com/bluebird/jmh/JMHTest.testStringBuffer
+inline,com/bluebird/jmh/JMHTest.testStringBuilder

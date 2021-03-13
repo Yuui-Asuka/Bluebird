@@ -1,5 +1,9 @@
 package com.bluebird;
 import org.mybatis.spring.annotation.MapperScan;
+import org.openjdk.jmh.runner.Runner;
+import org.openjdk.jmh.runner.RunnerException;
+import org.openjdk.jmh.runner.options.Options;
+import org.openjdk.jmh.runner.options.OptionsBuilder;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -16,7 +20,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 @EnableFeignClients
 public class BusinessApplication {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws RunnerException {
+
         SpringApplication.run(BusinessApplication.class, args);
     }
 
